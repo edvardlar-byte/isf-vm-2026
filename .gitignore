@@ -11,3 +11,6 @@ __pycache__/
 # Source archives / scratch (participant sheets live in participants/)
 _unzip_kamp/
 Kampresultat.zip
+
+# Machine-local Claude settings
+.claude/settings.local.json

@@ -42,6 +42,8 @@ jobs:
           git push || echo "nothing to push"
 
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true        # self-enable Pages so no manual UI step is needed
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
