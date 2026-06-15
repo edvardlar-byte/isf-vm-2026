@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15 15:12",
+  "last_updated": "2026-06-15 17:18",
   "group_scores": {
     "1": [
       2,
@@ -123,5 +123,7 @@
       "goals": 1
     }
   ],
+  "games_played": 12,
+  "games_total": 72,
   "current_goal_leader": "Kai Havertz"
 }
