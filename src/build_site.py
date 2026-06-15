@@ -53,7 +53,7 @@ def _row(s, leader_total):
     rank_cls = f"rank-{s['rank']}" if s["rank"] <= 3 else ""
 
     # 🔥 streak badge next to the name = best run of correct results (3+).
-    streak_badge = (f'<span class="streak" title="Beste rekke: {longest} riktige resultater på rad">'
+    streak_badge = (f'<span class="streak" title="Beste streak: {longest} riktige resultater på rad">'
                     f'🔥{longest}</span>') if longest >= 3 else ""
 
     # Per-category breakdown chips for the expandable detail.
@@ -62,9 +62,9 @@ def _row(s, leader_total):
         if bd[key]:
             chips.append(f'<span class="chip">{_esc(label)}: <b>{bd[key]}</b>&nbsp;p</span>')
     if longest >= 2:
-        chips.append(f'<span class="chip">Beste rekke: <b>{longest}</b> på rad</span>')
+        chips.append(f'<span class="chip">Beste streak: <b>{longest}</b> på rad</span>')
     if cur_streak >= 2:
-        chips.append(f'<span class="chip">Gjeldende rekke: <b>{cur_streak}</b> på rad</span>')
+        chips.append(f'<span class="chip">Gjeldende streak: <b>{cur_streak}</b> på rad</span>')
     chips_html = "".join(chips) or '<span class="chip muted">Ingen poeng ennå</span>'
 
     return f"""
@@ -92,10 +92,11 @@ def render(standings):
     body = "".join(_row(s, leader_total) for s in rows) or \
         '<tr><td colspan="7" class="empty">Ingen deltakerark er lest inn ennå.</td></tr>'
 
-    updated = standings.get("last_updated") or "not yet updated"
-    decided = standings["points_decided"]
+    updated = standings.get("last_updated") or "ikke oppdatert ennå"
     maxp = standings["max_possible"]
-    pct = int(round(100 * decided / maxp)) if maxp else 0
+    played = standings.get("games_played", 0)
+    total_games = standings.get("games_total", 104)
+    pct = int(round(100 * played / total_games)) if total_games else 0
 
     return f"""<!doctype html>
 <html lang="no">
@@ -166,8 +167,8 @@ def render(standings):
 
   <div class="meta">
     <div class="stat"><b>{len(rows)}</b><span>deltakere</span></div>
-    <div class="stat"><b>{decided}<span style="font-size:.9rem"> / {maxp}</span></b>
-      <span>poeng avgjort så langt</span>
+    <div class="stat"><b>{played}<span style="font-size:.9rem"> / {total_games}</span></b>
+      <span>kamper spilt</span>
       <div class="progress"><i style="width:{pct}%"></i></div>
     </div>
     <div class="stat"><b style="font-size:.95rem">{_esc(updated)}</b><span>sist oppdatert</span></div>
@@ -201,7 +202,7 @@ def render(standings):
     Poeng: 1&nbsp;riktig resultat · +2&nbsp;riktig score · 5&nbsp;gruppevinner ·
     7&nbsp;annenplass · 5/8/16/32/20&nbsp;per lag til 16-/åttende-/kvart-/semi-/finale ·
     40&nbsp;verdensmester · 20&nbsp;toppscorer · maks&nbsp;1004.
-    <br>🔥&nbsp;= beste rekke med riktige resultater på rad. Trykk på en rad for detaljer.
+    <br>🔥&nbsp;= beste streak med riktige resultater på rad. Trykk på en rad for detaljer.
     Oppdateres automatisk hver morgen.
   </footer>
 </div>

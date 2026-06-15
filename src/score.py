@@ -202,6 +202,8 @@ def build_standings(preds=None, results=None):
         "last_updated": results.get("last_updated"),
         "max_possible": C.MAX_POSSIBLE,
         "points_decided": _points_decided(results),
+        "games_played": results.get("games_played", len(results.get("group_scores", {}))),
+        "games_total": results.get("games_total", 104),
         "standings": scored,
     }
 

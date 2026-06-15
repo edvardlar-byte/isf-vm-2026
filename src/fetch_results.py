@@ -54,6 +54,8 @@ def _empty_results():
         "champion": None,
         "top_scorer": None,
         "goal_leaderboard": [],
+        "games_played": 0,
+        "games_total": 104,   # full WC 2026 has 104 matches
     }
 
 
@@ -154,6 +156,9 @@ def fetch_and_merge(results, now_iso=None):
     fidx = _fixture_index(fixtures)
 
     matches = _api_get(C.API_MATCHES)
+
+    results["games_played"] = sum(1 for m in matches if m.get("status") == "FINISHED")
+    results["games_total"] = len(matches)
 
     goals = Counter()
     for m in matches:
