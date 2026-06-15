@@ -10,6 +10,7 @@ Returns / writes:
 """
 from __future__ import annotations
 
+import datetime as _dt
 import glob
 import json
 import os
@@ -126,11 +127,64 @@ def score_one(pred, results):
     }
 
 
+def load_fixtures():
+    if not os.path.exists(C.FIXTURES_FILE):
+        return None
+    with open(C.FIXTURES_FILE, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _finished_in_kickoff_order(fixtures, results):
+    """Match numbers of finished matches, ordered by actual kickoff time."""
+    finished = set(results.get("group_scores", {}).keys())
+    if not fixtures:
+        return sorted(finished, key=lambda m: int(m))
+
+    def when(m):
+        d, t = m.get("date"), m.get("time")
+        try:
+            return _dt.datetime.strptime(f"{d} {t}", "%b %d, %Y %H:%M:%S")
+        except (ValueError, TypeError):
+            return _dt.datetime.max
+
+    ordered = sorted(fixtures["group_matches"], key=when)
+    return [str(m["match_no"]) for m in ordered if str(m["match_no"]) in finished]
+
+
+def _compute_streaks(pred, ordered_finished, results):
+    """
+    Current and longest run of consecutive correct group results (a correct
+    exact score also counts, since it's a correct result). Matches the
+    participant didn't predict are skipped, not counted as a miss.
+    """
+    cur = longest = 0
+    gp = pred.get("group_scores", {})
+    actual = results.get("group_scores", {})
+    for mno in ordered_finished:
+        pg = gp.get(mno)
+        if not pg:
+            continue
+        rh, ra = actual[mno]
+        if _sign(pg[0], pg[1]) == _sign(rh, ra):
+            cur += 1
+            longest = max(longest, cur)
+        else:
+            cur = 0
+    return cur, longest
+
+
 def build_standings(preds=None, results=None):
     preds = preds if preds is not None else load_predictions()
     results = results if results is not None else load_results()
+    fixtures = load_fixtures()
+    ordered_finished = _finished_in_kickoff_order(fixtures, results)
 
     scored = [score_one(p, results) for p in preds]
+    for s, p in zip(scored, preds):
+        cur, longest = _compute_streaks(p, ordered_finished, results)
+        s["detail"]["current_streak"] = cur
+        s["detail"]["longest_streak"] = longest
+
     # Sort by total desc, then exact-score count desc, then name.
     scored.sort(key=lambda s: (-s["total"], -len(s["detail"]["exact_scores"]),
                                s["participant"].lower()))

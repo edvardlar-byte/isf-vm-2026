@@ -17,17 +17,17 @@ import config as C
 import score as scoring
 
 CATEGORY_LABELS = [
-    ("group_outcome", "Group result"),
-    ("group_exact", "Exact score"),
-    ("group_winner", "Group winners"),
-    ("group_runner_up", "Runners-up"),
-    ("reach_R32", "Round of 32"),
-    ("reach_R16", "Round of 16"),
-    ("reach_QF", "Quarterfinals"),
-    ("reach_SF", "Semifinals"),
-    ("reach_Final", "Final"),
-    ("champion", "Champion"),
-    ("top_scorer", "Top scorer"),
+    ("group_outcome", "Riktig resultat"),
+    ("group_exact", "Riktig score"),
+    ("group_winner", "Gruppevinner"),
+    ("group_runner_up", "Annenplass i gruppe"),
+    ("reach_R32", "16-delsfinale"),
+    ("reach_R16", "Åttendelsfinale"),
+    ("reach_QF", "Kvartfinale"),
+    ("reach_SF", "Semifinale"),
+    ("reach_Final", "Finale"),
+    ("champion", "Verdensmester"),
+    ("top_scorer", "Toppscorer"),
 ]
 
 MEDAL = {1: "🥇", 2: "🥈", 3: "🥉"}
@@ -39,27 +39,42 @@ def _esc(s):
 
 def _row(s, leader_total):
     bd = s["breakdown"]
+    det = s["detail"]
     group_pts = bd["group_outcome"] + bd["group_exact"]
     ko_pts = sum(bd[f"reach_{r}"] for r in C.KO_ROUNDS)
     champ = bd["champion"] > 0
     tops = bd["top_scorer"] > 0
-    exacts = len(s["detail"]["exact_scores"])
+    n_res = det.get("correct_outcomes", 0)         # correct W/D/L (incl. exact)
+    n_exact = len(det.get("exact_scores", []))     # exact scorelines
+    cur_streak = det.get("current_streak", 0)
+    longest = det.get("longest_streak", 0)
     bar = int(round(100 * s["total"] / leader_total)) if leader_total else 0
     medal = MEDAL.get(s["rank"], "")
     rank_cls = f"rank-{s['rank']}" if s["rank"] <= 3 else ""
+
+    # 🔥 streak badge next to the name = best run of correct results (3+).
+    streak_badge = (f'<span class="streak" title="Beste rekke: {longest} riktige resultater på rad">'
+                    f'🔥{longest}</span>') if longest >= 3 else ""
 
     # Per-category breakdown chips for the expandable detail.
     chips = []
     for key, label in CATEGORY_LABELS:
         if bd[key]:
-            chips.append(f'<span class="chip">{_esc(label)}: <b>{bd[key]}</b></span>')
-    chips_html = "".join(chips) or '<span class="chip muted">No points yet</span>'
+            chips.append(f'<span class="chip">{_esc(label)}: <b>{bd[key]}</b>&nbsp;p</span>')
+    if longest >= 2:
+        chips.append(f'<span class="chip">Beste rekke: <b>{longest}</b> på rad</span>')
+    if cur_streak >= 2:
+        chips.append(f'<span class="chip">Gjeldende rekke: <b>{cur_streak}</b> på rad</span>')
+    chips_html = "".join(chips) or '<span class="chip muted">Ingen poeng ennå</span>'
 
     return f"""
       <tr class="prow {rank_cls}">
         <td class="rank">{medal}<span>{s['rank']}</span></td>
-        <td class="name">{_esc(s['participant'])}</td>
-        <td class="num">{group_pts}<small>{exacts}&nbsp;exact</small></td>
+        <td class="name">{_esc(s['participant'])}{streak_badge}</td>
+        <td class="num">{group_pts}
+          <small>{n_res}&nbsp;riktig resultat</small>
+          <small>{n_exact}&nbsp;riktig score</small>
+        </td>
         <td class="num">{ko_pts}</td>
         <td class="tick">{'✓' if champ else '–'}</td>
         <td class="tick">{'✓' if tops else '–'}</td>
@@ -75,7 +90,7 @@ def render(standings):
     rows = standings["standings"]
     leader_total = rows[0]["total"] if rows else 0
     body = "".join(_row(s, leader_total) for s in rows) or \
-        '<tr><td colspan="7" class="empty">No participant sheets parsed yet.</td></tr>'
+        '<tr><td colspan="7" class="empty">Ingen deltakerark er lest inn ennå.</td></tr>'
 
     updated = standings.get("last_updated") or "not yet updated"
     decided = standings["points_decided"]
@@ -83,11 +98,11 @@ def render(standings):
     pct = int(round(100 * decided / maxp)) if maxp else 0
 
     return f"""<!doctype html>
-<html lang="en">
+<html lang="no">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ISF World Cup 2026 — Prediction Standings</title>
+<title>ISF VM 2026 — Tippekonkurranse</title>
 <style>
   :root {{
     --bg:#0e1116; --card:#171c24; --line:#262d38; --txt:#e6eaf0; --muted:#8b94a3;
@@ -114,6 +129,9 @@ def render(standings):
   .rank {{ width:54px; color:var(--muted); font-variant-numeric:tabular-nums; }}
   .rank span {{ margin-left:4px; }}
   .name {{ font-weight:600; }}
+  .streak {{ margin-left:7px; font-size:.78rem; font-weight:700; color:var(--accent2);
+    background:#2a210e; border:1px solid #4a3a12; border-radius:20px; padding:1px 7px;
+    white-space:nowrap; }}
   .num, .total {{ text-align:right; font-variant-numeric:tabular-nums; }}
   .num small {{ display:block; color:var(--muted); font-size:.7rem; }}
   .tick {{ text-align:center; color:var(--accent); font-weight:700; }}
@@ -142,26 +160,26 @@ def render(standings):
 <div class="wrap">
   <header>
     <p>ISF · Verdensmesterskapet i fotball 2026</p>
-    <h1>⚽ Prediction Standings</h1>
-    <p>Who's leading the office World Cup competition</p>
+    <h1>⚽ Tippekonkurranse</h1>
+    <p>Hvem leder kontorets VM-konkurranse?</p>
   </header>
 
   <div class="meta">
-    <div class="stat"><b>{len(rows)}</b><span>participants</span></div>
+    <div class="stat"><b>{len(rows)}</b><span>deltakere</span></div>
     <div class="stat"><b>{decided}<span style="font-size:.9rem"> / {maxp}</span></b>
-      <span>points decided so far</span>
+      <span>poeng avgjort så langt</span>
       <div class="progress"><i style="width:{pct}%"></i></div>
     </div>
-    <div class="stat"><b style="font-size:.95rem">{_esc(updated)}</b><span>last updated</span></div>
+    <div class="stat"><b style="font-size:.95rem">{_esc(updated)}</b><span>sist oppdatert</span></div>
   </div>
 
   <table>
     <thead>
       <tr>
-        <th class="rank">#</th><th>Participant</th>
-        <th class="num">Group</th><th class="num">Knockout</th>
-        <th class="tick">Champ</th><th class="tick">Scorer</th>
-        <th class="total">Total</th>
+        <th class="rank">#</th><th>Deltaker</th>
+        <th class="num">Gruppe</th><th class="num">Sluttspill</th>
+        <th class="tick">Mester</th><th class="tick">Toppsc.</th>
+        <th class="total">Totalt</th>
       </tr>
     </thead>
     <tbody id="tb">{body}</tbody>
@@ -180,10 +198,11 @@ def render(standings):
   </script>
 
   <footer>
-    Scoring: 1&nbsp;pt correct group result · +2&nbsp;exact score · 5&nbsp;group winner ·
-    7&nbsp;runner-up · 5/8/16/32/20&nbsp;per team reaching R32/R16/QF/SF/Final ·
-    40&nbsp;champion · 20&nbsp;top scorer · max&nbsp;1004.
-    <br>Rows expand to show each category. Updated automatically every morning.
+    Poeng: 1&nbsp;riktig resultat · +2&nbsp;riktig score · 5&nbsp;gruppevinner ·
+    7&nbsp;annenplass · 5/8/16/32/20&nbsp;per lag til 16-/åttende-/kvart-/semi-/finale ·
+    40&nbsp;verdensmester · 20&nbsp;toppscorer · maks&nbsp;1004.
+    <br>🔥&nbsp;= beste rekke med riktige resultater på rad. Trykk på en rad for detaljer.
+    Oppdateres automatisk hver morgen.
   </footer>
 </div>
 </body>
