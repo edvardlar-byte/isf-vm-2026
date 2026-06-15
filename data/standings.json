@@ -1,0 +1,486 @@
+{
+  "last_updated": "2026-06-15 16:43",
+  "max_possible": 1004,
+  "points_decided": 36,
+  "standings": [
+    {
+      "participant": "Dag",
+      "total": 10,
+      "breakdown": {
+        "group_outcome": 8,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "2"
+        ],
+        "correct_outcomes": 8
+      },
+      "rank": 1
+    },
+    {
+      "participant": "Daniel",
+      "total": 9,
+      "breakdown": {
+        "group_outcome": 5,
+        "group_exact": 4,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1",
+          "2"
+        ],
+        "correct_outcomes": 5
+      },
+      "rank": 2
+    },
+    {
+      "participant": "Miriam",
+      "total": 9,
+      "breakdown": {
+        "group_outcome": 5,
+        "group_exact": 4,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "8",
+          "5"
+        ],
+        "correct_outcomes": 5
+      },
+      "rank": 2
+    },
+    {
+      "participant": "Runa",
+      "total": 9,
+      "breakdown": {
+        "group_outcome": 5,
+        "group_exact": 4,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1",
+          "9"
+        ],
+        "correct_outcomes": 5
+      },
+      "rank": 2
+    },
+    {
+      "participant": "Knut",
+      "total": 9,
+      "breakdown": {
+        "group_outcome": 7,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1"
+        ],
+        "correct_outcomes": 7
+      },
+      "rank": 2
+    },
+    {
+      "participant": "Marjan",
+      "total": 8,
+      "breakdown": {
+        "group_outcome": 4,
+        "group_exact": 4,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1",
+          "2"
+        ],
+        "correct_outcomes": 4
+      },
+      "rank": 6
+    },
+    {
+      "participant": "Sara Seehuus",
+      "total": 8,
+      "breakdown": {
+        "group_outcome": 4,
+        "group_exact": 4,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1",
+          "2"
+        ],
+        "correct_outcomes": 4
+      },
+      "rank": 6
+    },
+    {
+      "participant": "Julia",
+      "total": 8,
+      "breakdown": {
+        "group_outcome": 6,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "9"
+        ],
+        "correct_outcomes": 6
+      },
+      "rank": 6
+    },
+    {
+      "participant": "Trond",
+      "total": 8,
+      "breakdown": {
+        "group_outcome": 6,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1"
+        ],
+        "correct_outcomes": 6
+      },
+      "rank": 6
+    },
+    {
+      "participant": "Harald",
+      "total": 7,
+      "breakdown": {
+        "group_outcome": 5,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "7"
+        ],
+        "correct_outcomes": 5
+      },
+      "rank": 10
+    },
+    {
+      "participant": "Jan-Paul",
+      "total": 7,
+      "breakdown": {
+        "group_outcome": 5,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "7"
+        ],
+        "correct_outcomes": 5
+      },
+      "rank": 10
+    },
+    {
+      "participant": "Pål",
+      "total": 7,
+      "breakdown": {
+        "group_outcome": 5,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1"
+        ],
+        "correct_outcomes": 5
+      },
+      "rank": 10
+    },
+    {
+      "participant": "Sara Cools",
+      "total": 7,
+      "breakdown": {
+        "group_outcome": 5,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "5"
+        ],
+        "correct_outcomes": 5
+      },
+      "rank": 10
+    },
+    {
+      "participant": "Øyvind",
+      "total": 7,
+      "breakdown": {
+        "group_outcome": 5,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "3"
+        ],
+        "correct_outcomes": 5
+      },
+      "rank": 10
+    },
+    {
+      "participant": "Edvard",
+      "total": 6,
+      "breakdown": {
+        "group_outcome": 4,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1"
+        ],
+        "correct_outcomes": 4
+      },
+      "rank": 15
+    },
+    {
+      "participant": "Håkon",
+      "total": 6,
+      "breakdown": {
+        "group_outcome": 4,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1"
+        ],
+        "correct_outcomes": 4
+      },
+      "rank": 15
+    },
+    {
+      "participant": "Nina",
+      "total": 6,
+      "breakdown": {
+        "group_outcome": 4,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1"
+        ],
+        "correct_outcomes": 4
+      },
+      "rank": 15
+    },
+    {
+      "participant": "Audun",
+      "total": 5,
+      "breakdown": {
+        "group_outcome": 5,
+        "group_exact": 0,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [],
+        "correct_outcomes": 5
+      },
+      "rank": 18
+    },
+    {
+      "participant": "Johannes Due",
+      "total": 4,
+      "breakdown": {
+        "group_outcome": 4,
+        "group_exact": 0,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [],
+        "correct_outcomes": 4
+      },
+      "rank": 19
+    },
+    {
+      "participant": "Stine",
+      "total": 3,
+      "breakdown": {
+        "group_outcome": 3,
+        "group_exact": 0,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [],
+        "correct_outcomes": 3
+      },
+      "rank": 20
+    }
+  ]
+}

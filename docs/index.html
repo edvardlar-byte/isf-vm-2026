@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISF World Cup 2026 — Prediction Standings</title>
+<style>
+  :root {
+    --bg:#0e1116; --card:#171c24; --line:#262d38; --txt:#e6eaf0; --muted:#8b94a3;
+    --accent:#36c98b; --accent2:#f5c451; --bar:#36c98b;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+    font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  .wrap { max-width:920px; margin:0 auto; padding:24px 16px 64px; }
+  header h1 { margin:.2em 0 .1em; font-size:1.7rem; letter-spacing:.2px; }
+  header p { margin:0; color:var(--muted); }
+  .meta { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 10px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:10px 14px; flex:1; min-width:150px; }
+  .stat b { display:block; font-size:1.3rem; }
+  .stat span { color:var(--muted); font-size:.82rem; }
+  .progress { height:8px; background:var(--line); border-radius:6px; overflow:hidden; margin-top:8px; }
+  .progress i { display:block; height:100%; background:var(--accent2); }
+  table { width:100%; border-collapse:collapse; margin-top:10px; }
+  thead th { text-align:left; font-size:.74rem; text-transform:uppercase; letter-spacing:.6px;
+    color:var(--muted); padding:8px 10px; border-bottom:1px solid var(--line); }
+  th.num, th.tick, th.total { text-align:right; }
+  .prow td { padding:12px 10px; border-bottom:1px solid var(--line); vertical-align:middle; }
+  .rank { width:54px; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .rank span { margin-left:4px; }
+  .name { font-weight:600; }
+  .num, .total { text-align:right; font-variant-numeric:tabular-nums; }
+  .num small { display:block; color:var(--muted); font-size:.7rem; }
+  .tick { text-align:center; color:var(--accent); font-weight:700; }
+  .total { font-size:1.15rem; font-weight:700; min-width:120px; }
+  .bar { height:5px; background:var(--line); border-radius:4px; margin-top:5px; }
+  .bar i { display:block; height:100%; background:var(--bar); border-radius:4px; }
+  .rank-1 .total { color:var(--accent2); }
+  .prow { cursor:pointer; }
+  .prow:hover td { background:#1b212b; }
+  tbody.collapsed .detail { display:none; }
+  tbody.collapsed .detail.show { display:table-row; }
+  .detail td { padding:0 10px 12px; border-bottom:1px solid var(--line); }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; }
+  .chip { background:#10151c; border:1px solid var(--line); border-radius:20px;
+    padding:3px 10px; font-size:.78rem; color:var(--muted); }
+  .chip b { color:var(--txt); }
+  .chip.muted { font-style:italic; }
+  .empty { text-align:center; color:var(--muted); padding:30px; }
+  footer { margin-top:28px; color:var(--muted); font-size:.8rem; }
+  @media (max-width:560px) {
+    th.num, td.num, th.tick, td.tick { display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p>ISF · Verdensmesterskapet i fotball 2026</p>
+    <h1>⚽ Prediction Standings</h1>
+    <p>Who's leading the office World Cup competition</p>
+  </header>
+
+  <div class="meta">
+    <div class="stat"><b>20</b><span>participants</span></div>
+    <div class="stat"><b>36<span style="font-size:.9rem"> / 1004</span></b>
+      <span>points decided so far</span>
+      <div class="progress"><i style="width:4%"></i></div>
+    </div>
+    <div class="stat"><b style="font-size:.95rem">2026-06-15 16:43</b><span>last updated</span></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="rank">#</th><th>Participant</th>
+        <th class="num">Group</th><th class="num">Knockout</th>
+        <th class="tick">Champ</th><th class="tick">Scorer</th>
+        <th class="total">Total</th>
+      </tr>
+    </thead>
+    <tbody id="tb">
+      <tr class="prow rank-1">
+        <td class="rank">🥇<span>1</span></td>
+        <td class="name">Dag</td>
+        <td class="num">10<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">10
+          <div class="bar"><i style="width:100%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>8</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow rank-2">
+        <td class="rank">🥈<span>2</span></td>
+        <td class="name">Daniel</td>
+        <td class="num">9<small>2&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">9
+          <div class="bar"><i style="width:90%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>5</b></span><span class="chip">Exact score: <b>4</b></span></div></td></tr>
+    
+      <tr class="prow rank-2">
+        <td class="rank">🥈<span>2</span></td>
+        <td class="name">Miriam</td>
+        <td class="num">9<small>2&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">9
+          <div class="bar"><i style="width:90%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>5</b></span><span class="chip">Exact score: <b>4</b></span></div></td></tr>
+    
+      <tr class="prow rank-2">
+        <td class="rank">🥈<span>2</span></td>
+        <td class="name">Runa</td>
+        <td class="num">9<small>2&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">9
+          <div class="bar"><i style="width:90%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>5</b></span><span class="chip">Exact score: <b>4</b></span></div></td></tr>
+    
+      <tr class="prow rank-2">
+        <td class="rank">🥈<span>2</span></td>
+        <td class="name">Knut</td>
+        <td class="num">9<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">9
+          <div class="bar"><i style="width:90%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>7</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>6</span></td>
+        <td class="name">Marjan</td>
+        <td class="num">8<small>2&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">8
+          <div class="bar"><i style="width:80%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>4</b></span><span class="chip">Exact score: <b>4</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>6</span></td>
+        <td class="name">Sara Seehuus</td>
+        <td class="num">8<small>2&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">8
+          <div class="bar"><i style="width:80%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>4</b></span><span class="chip">Exact score: <b>4</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>6</span></td>
+        <td class="name">Julia</td>
+        <td class="num">8<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">8
+          <div class="bar"><i style="width:80%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>6</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>6</span></td>
+        <td class="name">Trond</td>
+        <td class="num">8<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">8
+          <div class="bar"><i style="width:80%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>6</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>10</span></td>
+        <td class="name">Harald</td>
+        <td class="num">7<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">7
+          <div class="bar"><i style="width:70%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>5</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>10</span></td>
+        <td class="name">Jan-Paul</td>
+        <td class="num">7<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">7
+          <div class="bar"><i style="width:70%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>5</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>10</span></td>
+        <td class="name">Pål</td>
+        <td class="num">7<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">7
+          <div class="bar"><i style="width:70%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>5</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>10</span></td>
+        <td class="name">Sara Cools</td>
+        <td class="num">7<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">7
+          <div class="bar"><i style="width:70%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>5</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>10</span></td>
+        <td class="name">Øyvind</td>
+        <td class="num">7<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">7
+          <div class="bar"><i style="width:70%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>5</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>15</span></td>
+        <td class="name">Edvard</td>
+        <td class="num">6<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">6
+          <div class="bar"><i style="width:60%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>4</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>15</span></td>
+        <td class="name">Håkon</td>
+        <td class="num">6<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">6
+          <div class="bar"><i style="width:60%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>4</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>15</span></td>
+        <td class="name">Nina</td>
+        <td class="num">6<small>1&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">6
+          <div class="bar"><i style="width:60%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>4</b></span><span class="chip">Exact score: <b>2</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>18</span></td>
+        <td class="name">Audun</td>
+        <td class="num">5<small>0&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">5
+          <div class="bar"><i style="width:50%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>5</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>19</span></td>
+        <td class="name">Johannes Due</td>
+        <td class="num">4<small>0&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">4
+          <div class="bar"><i style="width:40%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>4</b></span></div></td></tr>
+    
+      <tr class="prow ">
+        <td class="rank"><span>20</span></td>
+        <td class="name">Stine</td>
+        <td class="num">3<small>0&nbsp;exact</small></td>
+        <td class="num">0</td>
+        <td class="tick">–</td>
+        <td class="tick">–</td>
+        <td class="total">3
+          <div class="bar"><i style="width:30%"></i></div>
+        </td>
+      </tr>
+      <tr class="detail"><td colspan="7"><div class="chips"><span class="chip">Group result: <b>3</b></span></div></td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    // Progressive enhancement: collapse detail rows, expand on click.
+    var tb = document.getElementById('tb');
+    tb.classList.add('collapsed');
+    tb.addEventListener('click', function (e) {
+      var row = e.target.closest('tr.prow');
+      if (!row) return;
+      var d = row.nextElementSibling;
+      if (d && d.classList.contains('detail')) d.classList.toggle('show');
+    });
+  </script>
+
+  <footer>
+    Scoring: 1&nbsp;pt correct group result · +2&nbsp;exact score · 5&nbsp;group winner ·
+    7&nbsp;runner-up · 5/8/16/32/20&nbsp;per team reaching R32/R16/QF/SF/Final ·
+    40&nbsp;champion · 20&nbsp;top scorer · max&nbsp;1004.
+    <br>Rows expand to show each category. Updated automatically every morning.
+  </footer>
+</div>
+</body>
+</html>

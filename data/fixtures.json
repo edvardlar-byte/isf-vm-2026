@@ -1,0 +1,655 @@
+{
+  "source": "extracted from reference workbook",
+  "group_matches": [
+    {
+      "match_no": 1,
+      "stage": "group",
+      "date": "Jun 11, 2026",
+      "time": "19:00:00",
+      "home": "Mexico",
+      "away": "South Africa"
+    },
+    {
+      "match_no": 2,
+      "stage": "group",
+      "date": "Jun 12, 2026",
+      "time": "02:00:00",
+      "home": "Korea Republic",
+      "away": "Czech Republic"
+    },
+    {
+      "match_no": 3,
+      "stage": "group",
+      "date": "Jun 12, 2026",
+      "time": "19:00:00",
+      "home": "Canada",
+      "away": "Bosnia and Herzegovina"
+    },
+    {
+      "match_no": 4,
+      "stage": "group",
+      "date": "Jun 13, 2026",
+      "time": "01:00:00",
+      "home": "United States",
+      "away": "Paraguay"
+    },
+    {
+      "match_no": 5,
+      "stage": "group",
+      "date": "Jun 14, 2026",
+      "time": "01:00:00",
+      "home": "Haiti",
+      "away": "Scotland"
+    },
+    {
+      "match_no": 6,
+      "stage": "group",
+      "date": "Jun 14, 2026",
+      "time": "04:00:00",
+      "home": "Australia",
+      "away": "Turkey"
+    },
+    {
+      "match_no": 7,
+      "stage": "group",
+      "date": "Jun 13, 2026",
+      "time": "22:00:00",
+      "home": "Brazil",
+      "away": "Morocco"
+    },
+    {
+      "match_no": 8,
+      "stage": "group",
+      "date": "Jun 13, 2026",
+      "time": "19:00:00",
+      "home": "Qatar",
+      "away": "Switzerland"
+    },
+    {
+      "match_no": 9,
+      "stage": "group",
+      "date": "Jun 14, 2026",
+      "time": "23:00:00",
+      "home": "Ivory Coast",
+      "away": "Ecuador"
+    },
+    {
+      "match_no": 10,
+      "stage": "group",
+      "date": "Jun 14, 2026",
+      "time": "17:00:00",
+      "home": "Germany",
+      "away": "Curaçao"
+    },
+    {
+      "match_no": 11,
+      "stage": "group",
+      "date": "Jun 14, 2026",
+      "time": "20:00:00",
+      "home": "Netherlands",
+      "away": "Japan"
+    },
+    {
+      "match_no": 12,
+      "stage": "group",
+      "date": "Jun 15, 2026",
+      "time": "02:00:00",
+      "home": "Sweden",
+      "away": "Tunisia"
+    },
+    {
+      "match_no": 13,
+      "stage": "group",
+      "date": "Jun 15, 2026",
+      "time": "22:00:00",
+      "home": "Saudi Arabia",
+      "away": "Uruguay"
+    },
+    {
+      "match_no": 14,
+      "stage": "group",
+      "date": "Jun 15, 2026",
+      "time": "16:00:00",
+      "home": "Spain",
+      "away": "Cape Verde"
+    },
+    {
+      "match_no": 15,
+      "stage": "group",
+      "date": "Jun 16, 2026",
+      "time": "01:00:00",
+      "home": "Iran",
+      "away": "New Zealand"
+    },
+    {
+      "match_no": 16,
+      "stage": "group",
+      "date": "Jun 15, 2026",
+      "time": "19:00:00",
+      "home": "Belgium",
+      "away": "Egypt"
+    },
+    {
+      "match_no": 17,
+      "stage": "group",
+      "date": "Jun 16, 2026",
+      "time": "19:00:00",
+      "home": "France",
+      "away": "Senegal"
+    },
+    {
+      "match_no": 18,
+      "stage": "group",
+      "date": "Jun 16, 2026",
+      "time": "22:00:00",
+      "home": "Iraq",
+      "away": "Norway"
+    },
+    {
+      "match_no": 19,
+      "stage": "group",
+      "date": "Jun 17, 2026",
+      "time": "01:00:00",
+      "home": "Argentina",
+      "away": "Algeria"
+    },
+    {
+      "match_no": 20,
+      "stage": "group",
+      "date": "Jun 17, 2026",
+      "time": "04:00:00",
+      "home": "Austria",
+      "away": "Jordan"
+    },
+    {
+      "match_no": 21,
+      "stage": "group",
+      "date": "Jun 17, 2026",
+      "time": "23:00:00",
+      "home": "Ghana",
+      "away": "Panama"
+    },
+    {
+      "match_no": 22,
+      "stage": "group",
+      "date": "Jun 17, 2026",
+      "time": "20:00:00",
+      "home": "England",
+      "away": "Croatia"
+    },
+    {
+      "match_no": 23,
+      "stage": "group",
+      "date": "Jun 17, 2026",
+      "time": "17:00:00",
+      "home": "Portugal",
+      "away": "DR Congo"
+    },
+    {
+      "match_no": 24,
+      "stage": "group",
+      "date": "Jun 18, 2026",
+      "time": "02:00:00",
+      "home": "Uzbekistan",
+      "away": "Colombia"
+    },
+    {
+      "match_no": 25,
+      "stage": "group",
+      "date": "Jun 18, 2026",
+      "time": "16:00:00",
+      "home": "Czech Republic",
+      "away": "South Africa"
+    },
+    {
+      "match_no": 26,
+      "stage": "group",
+      "date": "Jun 18, 2026",
+      "time": "19:00:00",
+      "home": "Switzerland",
+      "away": "Bosnia and Herzegovina"
+    },
+    {
+      "match_no": 27,
+      "stage": "group",
+      "date": "Jun 18, 2026",
+      "time": "22:00:00",
+      "home": "Canada",
+      "away": "Qatar"
+    },
+    {
+      "match_no": 28,
+      "stage": "group",
+      "date": "Jun 19, 2026",
+      "time": "01:00:00",
+      "home": "Mexico",
+      "away": "Korea Republic"
+    },
+    {
+      "match_no": 29,
+      "stage": "group",
+      "date": "Jun 20, 2026",
+      "time": "00:30:00",
+      "home": "Brazil",
+      "away": "Haiti"
+    },
+    {
+      "match_no": 30,
+      "stage": "group",
+      "date": "Jun 19, 2026",
+      "time": "22:00:00",
+      "home": "Scotland",
+      "away": "Morocco"
+    },
+    {
+      "match_no": 31,
+      "stage": "group",
+      "date": "Jun 20, 2026",
+      "time": "03:00:00",
+      "home": "United States",
+      "away": "Australia"
+    },
+    {
+      "match_no": 32,
+      "stage": "group",
+      "date": "Jun 19, 2026",
+      "time": "19:00:00",
+      "home": "Turkey",
+      "away": "Paraguay"
+    },
+    {
+      "match_no": 33,
+      "stage": "group",
+      "date": "Jun 20, 2026",
+      "time": "20:00:00",
+      "home": "Germany",
+      "away": "Ivory Coast"
+    },
+    {
+      "match_no": 34,
+      "stage": "group",
+      "date": "Jun 21, 2026",
+      "time": "00:00:00",
+      "home": "Ecuador",
+      "away": "Curaçao"
+    },
+    {
+      "match_no": 35,
+      "stage": "group",
+      "date": "Jun 20, 2026",
+      "time": "17:00:00",
+      "home": "Netherlands",
+      "away": "Sweden"
+    },
+    {
+      "match_no": 36,
+      "stage": "group",
+      "date": "Jun 21, 2026",
+      "time": "04:00:00",
+      "home": "Tunisia",
+      "away": "Japan"
+    },
+    {
+      "match_no": 37,
+      "stage": "group",
+      "date": "Jun 21, 2026",
+      "time": "22:00:00",
+      "home": "Uruguay",
+      "away": "Cape Verde"
+    },
+    {
+      "match_no": 38,
+      "stage": "group",
+      "date": "Jun 21, 2026",
+      "time": "16:00:00",
+      "home": "Spain",
+      "away": "Saudi Arabia"
+    },
+    {
+      "match_no": 39,
+      "stage": "group",
+      "date": "Jun 21, 2026",
+      "time": "19:00:00",
+      "home": "Belgium",
+      "away": "Iran"
+    },
+    {
+      "match_no": 40,
+      "stage": "group",
+      "date": "Jun 22, 2026",
+      "time": "01:00:00",
+      "home": "New Zealand",
+      "away": "Egypt"
+    },
+    {
+      "match_no": 41,
+      "stage": "group",
+      "date": "Jun 23, 2026",
+      "time": "00:00:00",
+      "home": "Norway",
+      "away": "Senegal"
+    },
+    {
+      "match_no": 42,
+      "stage": "group",
+      "date": "Jun 22, 2026",
+      "time": "20:00:00",
+      "home": "France",
+      "away": "Iraq"
+    },
+    {
+      "match_no": 43,
+      "stage": "group",
+      "date": "Jun 22, 2026",
+      "time": "17:00:00",
+      "home": "Argentina",
+      "away": "Austria"
+    },
+    {
+      "match_no": 44,
+      "stage": "group",
+      "date": "Jun 23, 2026",
+      "time": "03:00:00",
+      "home": "Jordan",
+      "away": "Algeria"
+    },
+    {
+      "match_no": 45,
+      "stage": "group",
+      "date": "Jun 23, 2026",
+      "time": "20:00:00",
+      "home": "England",
+      "away": "Ghana"
+    },
+    {
+      "match_no": 46,
+      "stage": "group",
+      "date": "Jun 23, 2026",
+      "time": "23:00:00",
+      "home": "Panama",
+      "away": "Croatia"
+    },
+    {
+      "match_no": 47,
+      "stage": "group",
+      "date": "Jun 23, 2026",
+      "time": "17:00:00",
+      "home": "Portugal",
+      "away": "Uzbekistan"
+    },
+    {
+      "match_no": 48,
+      "stage": "group",
+      "date": "Jun 24, 2026",
+      "time": "02:00:00",
+      "home": "Colombia",
+      "away": "DR Congo"
+    },
+    {
+      "match_no": 49,
+      "stage": "group",
+      "date": "Jun 24, 2026",
+      "time": "22:00:00",
+      "home": "Scotland",
+      "away": "Brazil"
+    },
+    {
+      "match_no": 50,
+      "stage": "group",
+      "date": "Jun 24, 2026",
+      "time": "22:00:00",
+      "home": "Morocco",
+      "away": "Haiti"
+    },
+    {
+      "match_no": 51,
+      "stage": "group",
+      "date": "Jun 24, 2026",
+      "time": "19:00:00",
+      "home": "Switzerland",
+      "away": "Canada"
+    },
+    {
+      "match_no": 52,
+      "stage": "group",
+      "date": "Jun 24, 2026",
+      "time": "19:00:00",
+      "home": "Bosnia and Herzegovina",
+      "away": "Qatar"
+    },
+    {
+      "match_no": 53,
+      "stage": "group",
+      "date": "Jun 25, 2026",
+      "time": "01:00:00",
+      "home": "Czech Republic",
+      "away": "Mexico"
+    },
+    {
+      "match_no": 54,
+      "stage": "group",
+      "date": "Jun 25, 2026",
+      "time": "01:00:00",
+      "home": "South Africa",
+      "away": "Korea Republic"
+    },
+    {
+      "match_no": 55,
+      "stage": "group",
+      "date": "Jun 25, 2026",
+      "time": "20:00:00",
+      "home": "Curaçao",
+      "away": "Ivory Coast"
+    },
+    {
+      "match_no": 56,
+      "stage": "group",
+      "date": "Jun 25, 2026",
+      "time": "20:00:00",
+      "home": "Ecuador",
+      "away": "Germany"
+    },
+    {
+      "match_no": 57,
+      "stage": "group",
+      "date": "Jun 25, 2026",
+      "time": "23:00:00",
+      "home": "Japan",
+      "away": "Sweden"
+    },
+    {
+      "match_no": 58,
+      "stage": "group",
+      "date": "Jun 25, 2026",
+      "time": "23:00:00",
+      "home": "Tunisia",
+      "away": "Netherlands"
+    },
+    {
+      "match_no": 59,
+      "stage": "group",
+      "date": "Jun 26, 2026",
+      "time": "02:00:00",
+      "home": "Turkey",
+      "away": "United States"
+    },
+    {
+      "match_no": 60,
+      "stage": "group",
+      "date": "Jun 26, 2026",
+      "time": "02:00:00",
+      "home": "Paraguay",
+      "away": "Australia"
+    },
+    {
+      "match_no": 61,
+      "stage": "group",
+      "date": "Jun 26, 2026",
+      "time": "19:00:00",
+      "home": "Norway",
+      "away": "France"
+    },
+    {
+      "match_no": 62,
+      "stage": "group",
+      "date": "Jun 26, 2026",
+      "time": "19:00:00",
+      "home": "Senegal",
+      "away": "Iraq"
+    },
+    {
+      "match_no": 63,
+      "stage": "group",
+      "date": "Jun 27, 2026",
+      "time": "03:00:00",
+      "home": "Egypt",
+      "away": "Iran"
+    },
+    {
+      "match_no": 64,
+      "stage": "group",
+      "date": "Jun 27, 2026",
+      "time": "03:00:00",
+      "home": "New Zealand",
+      "away": "Belgium"
+    },
+    {
+      "match_no": 65,
+      "stage": "group",
+      "date": "Jun 27, 2026",
+      "time": "00:00:00",
+      "home": "Cape Verde",
+      "away": "Saudi Arabia"
+    },
+    {
+      "match_no": 66,
+      "stage": "group",
+      "date": "Jun 27, 2026",
+      "time": "00:00:00",
+      "home": "Uruguay",
+      "away": "Spain"
+    },
+    {
+      "match_no": 67,
+      "stage": "group",
+      "date": "Jun 27, 2026",
+      "time": "21:00:00",
+      "home": "Panama",
+      "away": "England"
+    },
+    {
+      "match_no": 68,
+      "stage": "group",
+      "date": "Jun 27, 2026",
+      "time": "21:00:00",
+      "home": "Croatia",
+      "away": "Ghana"
+    },
+    {
+      "match_no": 69,
+      "stage": "group",
+      "date": "Jun 28, 2026",
+      "time": "02:00:00",
+      "home": "Algeria",
+      "away": "Austria"
+    },
+    {
+      "match_no": 70,
+      "stage": "group",
+      "date": "Jun 28, 2026",
+      "time": "02:00:00",
+      "home": "Jordan",
+      "away": "Argentina"
+    },
+    {
+      "match_no": 71,
+      "stage": "group",
+      "date": "Jun 27, 2026",
+      "time": "23:30:00",
+      "home": "Colombia",
+      "away": "Portugal"
+    },
+    {
+      "match_no": 72,
+      "stage": "group",
+      "date": "Jun 27, 2026",
+      "time": "23:30:00",
+      "home": "DR Congo",
+      "away": "Uzbekistan"
+    }
+  ],
+  "groups": {
+    "Group A": [
+      "Czech Republic",
+      "Korea Republic",
+      "Mexico",
+      "South Africa"
+    ],
+    "Group B": [
+      "Bosnia and Herzegovina",
+      "Canada",
+      "Qatar",
+      "Switzerland"
+    ],
+    "Group C": [
+      "Brazil",
+      "Haiti",
+      "Morocco",
+      "Scotland"
+    ],
+    "Group D": [
+      "Australia",
+      "Paraguay",
+      "Turkey",
+      "United States"
+    ],
+    "Group E": [
+      "Curaçao",
+      "Ecuador",
+      "Germany",
+      "Ivory Coast"
+    ],
+    "Group F": [
+      "Japan",
+      "Netherlands",
+      "Sweden",
+      "Tunisia"
+    ],
+    "Group G": [
+      "Belgium",
+      "Egypt",
+      "Iran",
+      "New Zealand"
+    ],
+    "Group H": [
+      "Cape Verde",
+      "Saudi Arabia",
+      "Spain",
+      "Uruguay"
+    ],
+    "Group I": [
+      "France",
+      "Iraq",
+      "Norway",
+      "Senegal"
+    ],
+    "Group J": [
+      "Algeria",
+      "Argentina",
+      "Austria",
+      "Jordan"
+    ],
+    "Group K": [
+      "Colombia",
+      "DR Congo",
+      "Portugal",
+      "Uzbekistan"
+    ],
+    "Group L": [
+      "Croatia",
+      "England",
+      "Ghana",
+      "Panama"
+    ]
+  }
+}

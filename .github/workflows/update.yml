@@ -1,0 +1,57 @@
+name: Update standings & deploy
+
+# Runs every morning at 05:30 UTC (07:30 Norwegian summer time) and on demand.
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:        # lets you trigger it manually from the Actions tab
+  push:
+    branches: [main]        # also rebuild whenever you commit new sheets
+
+permissions:
+  contents: write           # to commit refreshed data/ and docs/
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      # The vmfantasy.tv2.no API is open — no token/secret required.
+      - name: Run the morning update
+        run: python run_update.py
+
+      - name: Commit refreshed data & site
+        run: |
+          git config user.name "standings-bot"
+          git config user.email "actions@github.com"
+          git add data docs
+          git commit -m "Update standings [skip ci]" || echo "nothing to commit"
+          git push || echo "nothing to push"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,13 @@
+# Excel lock files
+~$*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+
+# Local env
+.env
+
+# Source archives / scratch (participant sheets live in participants/)
+_unzip_kamp/
+Kampresultat.zip

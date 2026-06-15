@@ -1,0 +1,398 @@
+{
+  "participant": "Dag",
+  "source_file": "Dag.xlsx",
+  "group_scores": {
+    "1": [
+      4,
+      1
+    ],
+    "2": [
+      2,
+      1
+    ],
+    "3": [
+      1,
+      0
+    ],
+    "4": [
+      2,
+      1
+    ],
+    "5": [
+      0,
+      3
+    ],
+    "6": [
+      2,
+      2
+    ],
+    "7": [
+      0,
+      0
+    ],
+    "8": [
+      0,
+      0
+    ],
+    "9": [
+      0,
+      1
+    ],
+    "10": [
+      4,
+      0
+    ],
+    "11": [
+      2,
+      3
+    ],
+    "12": [
+      2,
+      0
+    ],
+    "13": [
+      1,
+      1
+    ],
+    "14": [
+      3,
+      0
+    ],
+    "15": [
+      2,
+      0
+    ],
+    "16": [
+      2,
+      2
+    ],
+    "17": [
+      2,
+      2
+    ],
+    "18": [
+      0,
+      1
+    ],
+    "19": [
+      3,
+      1
+    ],
+    "20": [
+      2,
+      0
+    ],
+    "21": [
+      1,
+      3
+    ],
+    "22": [
+      1,
+      1
+    ],
+    "23": [
+      0,
+      1
+    ],
+    "24": [
+      1,
+      2
+    ],
+    "25": [
+      0,
+      2
+    ],
+    "26": [
+      3,
+      1
+    ],
+    "27": [
+      3,
+      0
+    ],
+    "28": [
+      1,
+      1
+    ],
+    "29": [
+      0,
+      0
+    ],
+    "30": [
+      0,
+      4
+    ],
+    "31": [
+      2,
+      5
+    ],
+    "32": [
+      1,
+      1
+    ],
+    "33": [
+      2,
+      3
+    ],
+    "34": [
+      4,
+      1
+    ],
+    "35": [
+      4,
+      0
+    ],
+    "36": [
+      1,
+      0
+    ],
+    "37": [
+      2,
+      0
+    ],
+    "38": [
+      2,
+      1
+    ],
+    "39": [
+      2,
+      1
+    ],
+    "40": [
+      0,
+      3
+    ],
+    "41": [
+      1,
+      1
+    ],
+    "42": [
+      5,
+      0
+    ],
+    "43": [
+      3,
+      2
+    ],
+    "44": [
+      0,
+      1
+    ],
+    "45": [
+      1,
+      0
+    ],
+    "46": [
+      0,
+      2
+    ],
+    "47": [
+      1,
+      0
+    ],
+    "48": [
+      1,
+      2
+    ],
+    "49": [
+      1,
+      0
+    ],
+    "50": [
+      1,
+      0
+    ],
+    "51": [
+      1,
+      2
+    ],
+    "52": [
+      2,
+      1
+    ],
+    "53": [
+      0,
+      0
+    ],
+    "54": [
+      2,
+      0
+    ],
+    "55": [
+      1,
+      4
+    ],
+    "56": [
+      2,
+      2
+    ],
+    "57": [
+      1,
+      1
+    ],
+    "58": [
+      1,
+      3
+    ],
+    "59": [
+      2,
+      6
+    ],
+    "60": [
+      1,
+      2
+    ],
+    "61": [
+      2,
+      1
+    ],
+    "62": [
+      4,
+      1
+    ],
+    "63": [
+      4,
+      0
+    ],
+    "64": [
+      0,
+      1
+    ],
+    "65": [
+      1,
+      2
+    ],
+    "66": [
+      1,
+      2
+    ],
+    "67": [
+      1,
+      0
+    ],
+    "68": [
+      0,
+      1
+    ],
+    "69": [
+      0,
+      2
+    ],
+    "70": [
+      1,
+      4
+    ],
+    "71": [
+      1,
+      5
+    ],
+    "72": [
+      1,
+      1
+    ]
+  },
+  "group_winners": {
+    "Group A": "South Africa",
+    "Group B": "Canada",
+    "Group C": "Morocco",
+    "Group D": "Australia",
+    "Group E": "Ecuador",
+    "Group F": "Netherlands",
+    "Group G": "Egypt",
+    "Group H": "Spain",
+    "Group I": "Norway",
+    "Group J": "Argentina",
+    "Group K": "DR Congo",
+    "Group L": "Panama"
+  },
+  "group_runners": {
+    "Group A": "Mexico",
+    "Group B": "Switzerland",
+    "Group C": "Scotland",
+    "Group D": "United States",
+    "Group E": "Ivory Coast",
+    "Group F": "Japan",
+    "Group G": "Belgium",
+    "Group H": "Uruguay",
+    "Group I": "Senegal",
+    "Group J": "Austria",
+    "Group K": "Portugal",
+    "Group L": "Croatia"
+  },
+  "bracket": {
+    "R32": [
+      "Ecuador",
+      "Sweden",
+      "Norway",
+      "Saudi Arabia",
+      "Mexico",
+      "Switzerland",
+      "Netherlands",
+      "Scotland",
+      "Portugal",
+      "Croatia",
+      "Spain",
+      "Austria",
+      "Australia",
+      "Bosnia and Herzegovina",
+      "Egypt",
+      "Korea Republic",
+      "Morocco",
+      "Japan",
+      "Ivory Coast",
+      "Senegal",
+      "South Africa",
+      "Germany",
+      "Panama",
+      "France",
+      "Argentina",
+      "Uruguay",
+      "United States",
+      "Belgium",
+      "Canada",
+      "Iran",
+      "DR Congo",
+      "England"
+    ],
+    "R16": [
+      "Ecuador",
+      "Norway",
+      "Switzerland",
+      "Netherlands",
+      "Portugal",
+      "Spain",
+      "Australia",
+      "Korea Republic",
+      "Morocco",
+      "Senegal",
+      "South Africa",
+      "France",
+      "Argentina",
+      "United States",
+      "Iran",
+      "England"
+    ],
+    "QF": [
+      "Ecuador",
+      "Netherlands",
+      "Spain",
+      "Korea Republic",
+      "Morocco",
+      "France",
+      "United States",
+      "England"
+    ],
+    "SF": [
+      "Netherlands",
+      "Spain",
+      "France",
+      "England"
+    ],
+    "Final": [
+      "Netherlands",
+      "France"
+    ]
+  },
+  "champion": "France",
+  "top_scorer": "Mbappé"
+}

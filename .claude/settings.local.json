@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import openpyxl; print\\(openpyxl.__version__\\)\")",
+      "Bash(pip install *)",
+      "Bash(python -c ' *)",
+      "Bash(mkdir -p participants data/predictions src docs .github/workflows)",
+      "Bash(cp edvard_tipping.xlsx participants/)",
+      "Bash(PYTHONIOENCODING=utf-8 python extract_fixtures.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python parse_predictions.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
+      "Bash(PYTHONIOENCODING=utf-8 python score.py)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(rm -f data/predictions/Astrid.json data/predictions/Bjørn.json \"data/predictions/Bj\\\\xc3\\\\xb8rn.json\" data/predictions/Camilla.json)",
+      "Bash(rm -f data/predictions/Bj*.json)",
+      "Bash(PYTHONIOENCODING=utf-8 python run_update.py)",
+      "Bash(cd \"C:/Users/edvardnl/.claude/projects/C--Claude-Access-ISF-World-Cup-Predictions-Project/memory\")",
+      "Bash(ls)",
+      "WebFetch(domain:vmfantasy.tv2.no)",
+      "WebSearch",
+      "mcp__Claude_in_Chrome__list_connected_browsers",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -q -m 'ISF World Cup 2026 prediction standings: parser, TV2 results fetch, scoring, site *)"
+    ]
+  }
+}

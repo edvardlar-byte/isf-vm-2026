@@ -1,0 +1,398 @@
+{
+  "participant": "Johannes Due",
+  "source_file": "Johannes Due.xlsx",
+  "group_scores": {
+    "1": [
+      2,
+      1
+    ],
+    "2": [
+      0,
+      2
+    ],
+    "3": [
+      2,
+      1
+    ],
+    "4": [
+      2,
+      0
+    ],
+    "5": [
+      0,
+      3
+    ],
+    "6": [
+      1,
+      2
+    ],
+    "7": [
+      2,
+      1
+    ],
+    "8": [
+      0,
+      2
+    ],
+    "9": [
+      0,
+      0
+    ],
+    "10": [
+      3,
+      0
+    ],
+    "11": [
+      2,
+      1
+    ],
+    "12": [
+      1,
+      1
+    ],
+    "13": [
+      1,
+      3
+    ],
+    "14": [
+      4,
+      0
+    ],
+    "15": [
+      1,
+      2
+    ],
+    "16": [
+      2,
+      0
+    ],
+    "17": [
+      3,
+      1
+    ],
+    "18": [
+      0,
+      2
+    ],
+    "19": [
+      4,
+      1
+    ],
+    "20": [
+      1,
+      0
+    ],
+    "21": [
+      2,
+      1
+    ],
+    "22": [
+      2,
+      2
+    ],
+    "23": [
+      3,
+      0
+    ],
+    "24": [
+      1,
+      2
+    ],
+    "25": [
+      1,
+      1
+    ],
+    "26": [
+      2,
+      0
+    ],
+    "27": [
+      2,
+      0
+    ],
+    "28": [
+      1,
+      1
+    ],
+    "29": [
+      3,
+      1
+    ],
+    "30": [
+      1,
+      2
+    ],
+    "31": [
+      2,
+      2
+    ],
+    "32": [
+      1,
+      0
+    ],
+    "33": [
+      2,
+      0
+    ],
+    "34": [
+      1,
+      0
+    ],
+    "35": [
+      2,
+      1
+    ],
+    "36": [
+      0,
+      2
+    ],
+    "37": [
+      3,
+      1
+    ],
+    "38": [
+      4,
+      1
+    ],
+    "39": [
+      2,
+      0
+    ],
+    "40": [
+      0,
+      2
+    ],
+    "41": [
+      1,
+      2
+    ],
+    "42": [
+      3,
+      1
+    ],
+    "43": [
+      2,
+      0
+    ],
+    "44": [
+      0,
+      0
+    ],
+    "45": [
+      2,
+      2
+    ],
+    "46": [
+      0,
+      3
+    ],
+    "47": [
+      2,
+      0
+    ],
+    "48": [
+      1,
+      0
+    ],
+    "49": [
+      1,
+      3
+    ],
+    "50": [
+      3,
+      1
+    ],
+    "51": [
+      2,
+      1
+    ],
+    "52": [
+      1,
+      0
+    ],
+    "53": [
+      1,
+      2
+    ],
+    "54": [
+      2,
+      3
+    ],
+    "55": [
+      0,
+      2
+    ],
+    "56": [
+      0,
+      3
+    ],
+    "57": [
+      0,
+      0
+    ],
+    "58": [
+      1,
+      3
+    ],
+    "59": [
+      2,
+      2
+    ],
+    "60": [
+      1,
+      1
+    ],
+    "61": [
+      2,
+      1
+    ],
+    "62": [
+      3,
+      0
+    ],
+    "63": [
+      0,
+      1
+    ],
+    "64": [
+      1,
+      1
+    ],
+    "65": [
+      0,
+      1
+    ],
+    "66": [
+      2,
+      3
+    ],
+    "67": [
+      0,
+      2
+    ],
+    "68": [
+      3,
+      2
+    ],
+    "69": [
+      1,
+      1
+    ],
+    "70": [
+      0,
+      4
+    ],
+    "71": [
+      2,
+      4
+    ],
+    "72": [
+      1,
+      0
+    ]
+  },
+  "group_winners": {
+    "Group A": "Mexico",
+    "Group B": "Switzerland",
+    "Group C": "Brazil",
+    "Group D": "Turkey",
+    "Group E": "Germany",
+    "Group F": "Netherlands",
+    "Group G": "Belgium",
+    "Group H": "Spain",
+    "Group I": "France",
+    "Group J": "Argentina",
+    "Group K": "Portugal",
+    "Group L": "Croatia"
+  },
+  "group_runners": {
+    "Group A": "Czech Republic",
+    "Group B": "Canada",
+    "Group C": "Morocco",
+    "Group D": "United States",
+    "Group E": "Ivory Coast",
+    "Group F": "Japan",
+    "Group G": "New Zealand",
+    "Group H": "Uruguay",
+    "Group I": "Norway",
+    "Group J": "Austria",
+    "Group K": "Colombia",
+    "Group L": "England"
+  },
+  "bracket": {
+    "R32": [
+      "Germany",
+      "Korea Republic",
+      "France",
+      "Scotland",
+      "Czech Republic",
+      "Canada",
+      "Netherlands",
+      "Morocco",
+      "Colombia",
+      "England",
+      "Spain",
+      "Austria",
+      "Turkey",
+      "Bosnia and Herzegovina",
+      "Belgium",
+      "Senegal",
+      "Brazil",
+      "Japan",
+      "Ivory Coast",
+      "Norway",
+      "Mexico",
+      "Ecuador",
+      "Croatia",
+      "DR Congo",
+      "Argentina",
+      "Uruguay",
+      "United States",
+      "New Zealand",
+      "Switzerland",
+      "Iran",
+      "Portugal",
+      "Ghana"
+    ],
+    "R16": [
+      "Germany",
+      "France",
+      "Czech Republic",
+      "Netherlands",
+      "England",
+      "Spain",
+      "Turkey",
+      "Belgium",
+      "Brazil",
+      "Norway",
+      "Mexico",
+      "Croatia",
+      "Argentina",
+      "United States",
+      "Switzerland",
+      "Portugal"
+    ],
+    "QF": [
+      "Germany",
+      "Netherlands",
+      "Spain",
+      "Belgium",
+      "Brazil",
+      "Mexico",
+      "Argentina",
+      "Portugal"
+    ],
+    "SF": [
+      "Germany",
+      "Spain",
+      "Brazil",
+      "Portugal"
+    ],
+    "Final": [
+      "Germany",
+      "Portugal"
+    ]
+  },
+  "champion": "Germany",
+  "top_scorer": "Mikel Oyarzabal"
+}
