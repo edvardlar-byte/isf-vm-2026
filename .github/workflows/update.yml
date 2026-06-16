@@ -1,9 +1,14 @@
 name: Update standings & deploy
 
-# Runs every morning at 05:30 UTC (07:30 Norwegian summer time) and on demand.
+# Runs every morning and on demand.
+# GitHub's scheduler is best-effort: it delays/skips jobs under load, and the
+# busiest minutes (:00 and :30) are skipped most often. So we use an off-peak
+# minute AND a backup run an hour later — if the first is dropped, the second
+# catches it. Times are UTC; Norway in summer is UTC+2.
 on:
   schedule:
-    - cron: "30 5 * * *"
+    - cron: "13 5 * * *"    # 07:13 Norwegian summer time
+    - cron: "13 6 * * *"    # 08:13 — backup if the 07:13 run was skipped
   workflow_dispatch:        # lets you trigger it manually from the Actions tab
   push:
     branches: [main]        # also rebuild whenever you commit new sheets
