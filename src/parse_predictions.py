@@ -30,10 +30,11 @@ def _cell(ws, col_letter, row):
 
 
 def _participant_name(path):
+    # The filename (without extension) IS the display name, used verbatim so
+    # initials like "Kari SJ" / "Mari BH" keep their casing. Name the files
+    # exactly how you want them shown.
     base = os.path.splitext(os.path.basename(path))[0]
-    # "edvard_tipping" -> "Edvard"
-    name = base.replace("_tipping", "").replace("_", " ").strip()
-    return name.title() if name else base
+    return base.replace("_tipping", "").strip() or base
 
 
 def _load_topscorer_csv():
