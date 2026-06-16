@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15 15:18",
+  "last_updated": "2026-06-16 11:26",
   "group_scores": {
     "1": [
       2,
@@ -48,6 +48,22 @@
     "12": [
       5,
       1
+    ],
+    "14": [
+      0,
+      0
+    ],
+    "16": [
+      1,
+      1
+    ],
+    "13": [
+      1,
+      1
+    ],
+    "15": [
+      2,
+      2
     ]
   },
   "group_winners": {},
@@ -68,6 +84,10 @@
     },
     {
       "player": "Mattias Svanberg",
+      "goals": 2
+    },
+    {
+      "player": "Elijah Just",
       "goals": 2
     },
     {
@@ -117,13 +137,9 @@
     {
       "player": "Vinicius Junior",
       "goals": 1
-    },
-    {
-      "player": "John McGinn",
-      "goals": 1
     }
   ],
-  "games_played": 12,
+  "games_played": 16,
   "games_total": 72,
   "current_goal_leader": "Kai Havertz"
 }

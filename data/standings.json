@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-06-15 15:18",
+  "last_updated": "2026-06-16 11:26",
   "max_possible": 1004,
-  "points_decided": 36,
-  "games_played": 12,
+  "points_decided": 48,
+  "games_played": 16,
   "games_total": 72,
   "standings": [
     {
       "participant": "Dag",
-      "total": 10,
+      "total": 14,
       "breakdown": {
-        "group_outcome": 8,
-        "group_exact": 2,
+        "group_outcome": 10,
+        "group_exact": 4,
         "group_winner": 0,
         "group_runner_up": 0,
         "reach_R32": 0,
@@ -23,19 +23,103 @@
       },
       "detail": {
         "exact_scores": [
-          "2"
+          "2",
+          "13"
         ],
-        "correct_outcomes": 8,
-        "current_streak": 1,
+        "correct_outcomes": 10,
+        "current_streak": 0,
         "longest_streak": 4
       },
       "rank": 1
     },
     {
-      "participant": "Daniel",
-      "total": 9,
+      "participant": "Håkon",
+      "total": 12,
       "breakdown": {
-        "group_outcome": 5,
+        "group_outcome": 6,
+        "group_exact": 6,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1",
+          "16",
+          "15"
+        ],
+        "correct_outcomes": 6,
+        "current_streak": 1,
+        "longest_streak": 1
+      },
+      "rank": 2
+    },
+    {
+      "participant": "Runa",
+      "total": 12,
+      "breakdown": {
+        "group_outcome": 6,
+        "group_exact": 6,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1",
+          "9",
+          "16"
+        ],
+        "correct_outcomes": 6,
+        "current_streak": 0,
+        "longest_streak": 2
+      },
+      "rank": 2
+    },
+    {
+      "participant": "Trond",
+      "total": 12,
+      "breakdown": {
+        "group_outcome": 8,
+        "group_exact": 4,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1",
+          "16"
+        ],
+        "correct_outcomes": 8,
+        "current_streak": 1,
+        "longest_streak": 2
+      },
+      "rank": 2
+    },
+    {
+      "participant": "Daniel",
+      "total": 10,
+      "breakdown": {
+        "group_outcome": 6,
         "group_exact": 4,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -52,17 +136,17 @@
           "1",
           "2"
         ],
-        "correct_outcomes": 5,
+        "correct_outcomes": 6,
         "current_streak": 1,
         "longest_streak": 2
       },
-      "rank": 2
+      "rank": 5
     },
     {
       "participant": "Miriam",
-      "total": 9,
+      "total": 10,
       "breakdown": {
-        "group_outcome": 5,
+        "group_outcome": 6,
         "group_exact": 4,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -79,18 +163,18 @@
           "8",
           "5"
         ],
-        "correct_outcomes": 5,
-        "current_streak": 0,
+        "correct_outcomes": 6,
+        "current_streak": 1,
         "longest_streak": 2
       },
-      "rank": 2
+      "rank": 5
     },
     {
-      "participant": "Runa",
+      "participant": "Julia",
       "total": 9,
       "breakdown": {
-        "group_outcome": 5,
-        "group_exact": 4,
+        "group_outcome": 7,
+        "group_exact": 2,
         "group_winner": 0,
         "group_runner_up": 0,
         "reach_R32": 0,
@@ -103,14 +187,13 @@
       },
       "detail": {
         "exact_scores": [
-          "1",
           "9"
         ],
-        "correct_outcomes": 5,
-        "current_streak": 2,
+        "correct_outcomes": 7,
+        "current_streak": 1,
         "longest_streak": 2
       },
-      "rank": 2
+      "rank": 7
     },
     {
       "participant": "Knut",
@@ -136,7 +219,7 @@
         "current_streak": 0,
         "longest_streak": 2
       },
-      "rank": 2
+      "rank": 7
     },
     {
       "participant": "Marjan",
@@ -163,7 +246,7 @@
         "current_streak": 0,
         "longest_streak": 2
       },
-      "rank": 6
+      "rank": 9
     },
     {
       "participant": "Sara Seehuus",
@@ -190,36 +273,10 @@
         "current_streak": 0,
         "longest_streak": 2
       },
-      "rank": 6
+      "rank": 9
     },
     {
-      "participant": "Julia",
-      "total": 8,
-      "breakdown": {
-        "group_outcome": 6,
-        "group_exact": 2,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "9"
-        ],
-        "correct_outcomes": 6,
-        "current_streak": 2,
-        "longest_streak": 2
-      },
-      "rank": 6
-    },
-    {
-      "participant": "Trond",
+      "participant": "Edvard",
       "total": 8,
       "breakdown": {
         "group_outcome": 6,
@@ -239,16 +296,16 @@
           "1"
         ],
         "correct_outcomes": 6,
-        "current_streak": 0,
+        "current_streak": 1,
         "longest_streak": 2
       },
-      "rank": 6
+      "rank": 9
     },
     {
       "participant": "Harald",
-      "total": 7,
+      "total": 8,
       "breakdown": {
-        "group_outcome": 5,
+        "group_outcome": 6,
         "group_exact": 2,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -264,11 +321,37 @@
         "exact_scores": [
           "7"
         ],
-        "correct_outcomes": 5,
-        "current_streak": 0,
+        "correct_outcomes": 6,
+        "current_streak": 1,
         "longest_streak": 2
       },
-      "rank": 10
+      "rank": 9
+    },
+    {
+      "participant": "Sara Cools",
+      "total": 8,
+      "breakdown": {
+        "group_outcome": 6,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "5"
+        ],
+        "correct_outcomes": 6,
+        "current_streak": 1,
+        "longest_streak": 2
+      },
+      "rank": 9
     },
     {
       "participant": "Jan-Paul",
@@ -294,7 +377,33 @@
         "current_streak": 0,
         "longest_streak": 2
       },
-      "rank": 10
+      "rank": 14
+    },
+    {
+      "participant": "Nina",
+      "total": 7,
+      "breakdown": {
+        "group_outcome": 5,
+        "group_exact": 2,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1"
+        ],
+        "correct_outcomes": 5,
+        "current_streak": 0,
+        "longest_streak": 2
+      },
+      "rank": 14
     },
     {
       "participant": "Pål",
@@ -320,33 +429,7 @@
         "current_streak": 0,
         "longest_streak": 2
       },
-      "rank": 10
-    },
-    {
-      "participant": "Sara Cools",
-      "total": 7,
-      "breakdown": {
-        "group_outcome": 5,
-        "group_exact": 2,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "5"
-        ],
-        "correct_outcomes": 5,
-        "current_streak": 0,
-        "longest_streak": 2
-      },
-      "rank": 10
+      "rank": 14
     },
     {
       "participant": "Øyvind",
@@ -372,91 +455,13 @@
         "current_streak": 0,
         "longest_streak": 1
       },
-      "rank": 10
-    },
-    {
-      "participant": "Edvard",
-      "total": 6,
-      "breakdown": {
-        "group_outcome": 4,
-        "group_exact": 2,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "1"
-        ],
-        "correct_outcomes": 4,
-        "current_streak": 0,
-        "longest_streak": 2
-      },
-      "rank": 15
-    },
-    {
-      "participant": "Håkon",
-      "total": 6,
-      "breakdown": {
-        "group_outcome": 4,
-        "group_exact": 2,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "1"
-        ],
-        "correct_outcomes": 4,
-        "current_streak": 0,
-        "longest_streak": 1
-      },
-      "rank": 15
-    },
-    {
-      "participant": "Nina",
-      "total": 6,
-      "breakdown": {
-        "group_outcome": 4,
-        "group_exact": 2,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "1"
-        ],
-        "correct_outcomes": 4,
-        "current_streak": 0,
-        "longest_streak": 2
-      },
-      "rank": 15
+      "rank": 14
     },
     {
       "participant": "Audun",
-      "total": 5,
+      "total": 6,
       "breakdown": {
-        "group_outcome": 5,
+        "group_outcome": 6,
         "group_exact": 0,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -470,8 +475,8 @@
       },
       "detail": {
         "exact_scores": [],
-        "correct_outcomes": 5,
-        "current_streak": 1,
+        "correct_outcomes": 6,
+        "current_streak": 0,
         "longest_streak": 1
       },
       "rank": 18
@@ -502,9 +507,9 @@
     },
     {
       "participant": "Stine",
-      "total": 3,
+      "total": 4,
       "breakdown": {
-        "group_outcome": 3,
+        "group_outcome": 4,
         "group_exact": 0,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -518,11 +523,11 @@
       },
       "detail": {
         "exact_scores": [],
-        "correct_outcomes": 3,
-        "current_streak": 0,
+        "correct_outcomes": 4,
+        "current_streak": 1,
         "longest_streak": 1
       },
-      "rank": 20
+      "rank": 19
     }
   ]
 }
