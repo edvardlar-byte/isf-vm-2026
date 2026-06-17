@@ -37,7 +37,7 @@ def _esc(s):
     return html.escape(str(s)) if s is not None else ""
 
 
-def _row(s, leader_total):
+def _row(s, leader_total, has_result):
     bd = s["breakdown"]
     det = s["detail"]
     group_pts = bd["group_outcome"] + bd["group_exact"]
@@ -48,29 +48,58 @@ def _row(s, leader_total):
     n_exact = len(det.get("exact_scores", []))     # exact scorelines
     cur_streak = det.get("current_streak", 0)
     longest = det.get("longest_streak", 0)
+    rares = det.get("rare_hits", [])
     bar = int(round(100 * s["total"] / leader_total)) if leader_total else 0
     medal = MEDAL.get(s["rank"], "")
     rank_cls = f"rank-{s['rank']}" if s["rank"] <= 3 else ""
 
-    # 🔥 streak badge next to the name = best run of correct results (3+).
-    streak_badge = (f'<span class="streak" title="Beste streak: {longest} riktige resultater på rad">'
-                    f'🔥{longest}</span>') if longest >= 3 else ""
+    # 🔥 current streak (2+ correct results in a row).
+    streak_badge = (f'<span class="streak" title="{cur_streak} riktige resultater på rad nå">'
+                    f'🔥{cur_streak}</span>') if cur_streak >= 2 else ""
+
+    # 💎 rare-hit collection: one hoverable diamond per exact score almost
+    # nobody else got — a running "precognition" side contest.
+    diamond_strip = ""
+    if rares:
+        gems = "".join(
+            f'<span class="d" title="{_esc(r["label"])} {r["score"][0]}–{r["score"][1]} '
+            f'· {r["hitters"]} traff">💎</span>'
+            for r in rares
+        )
+        diamond_strip = (f'<div class="dstrip" title="{len(rares)} sjeldne treff">'
+                         f'{gems}</div>')
+
+    # Latest guess for the most recent finished match.
+    lg = det.get("latest_guess") or {"status": "none", "pred": None}
+    sub_html = ""
+    if has_result:
+        if lg.get("pred"):
+            ph, pa = lg["pred"]
+            cls = {"exact": "ok", "result": "partial", "wrong": "miss"}.get(lg["status"], "")
+            mark = {"exact": "✓", "result": "~", "wrong": "✗"}.get(lg["status"], "")
+            sub_html = f'<div class="sub">Siste tipp: <span class="{cls}">{ph}–{pa} {mark}</span></div>'
+        else:
+            sub_html = '<div class="sub">Siste tipp: <span class="miss">ikke tippet</span></div>'
 
     # Per-category breakdown chips for the expandable detail.
     chips = []
     for key, label in CATEGORY_LABELS:
         if bd[key]:
             chips.append(f'<span class="chip">{_esc(label)}: <b>{bd[key]}</b>&nbsp;p</span>')
-    if longest >= 2:
-        chips.append(f'<span class="chip">Beste streak: <b>{longest}</b> på rad</span>')
+    for r in rares:
+        chips.append(f'<span class="chip rare-chip">💎 {_esc(r["label"])} '
+                     f'{r["score"][0]}–{r["score"][1]} '
+                     f'<b>({r["hitters"]} traff)</b></span>')
     if cur_streak >= 2:
         chips.append(f'<span class="chip">Gjeldende streak: <b>{cur_streak}</b> på rad</span>')
+    if longest >= 2:
+        chips.append(f'<span class="chip">Beste streak: <b>{longest}</b> på rad</span>')
     chips_html = "".join(chips) or '<span class="chip muted">Ingen poeng ennå</span>'
 
     return f"""
       <tr class="prow {rank_cls}">
         <td class="rank">{medal}<span>{s['rank']}</span></td>
-        <td class="name">{_esc(s['participant'])}{streak_badge}</td>
+        <td class="name"><div class="nm">{_esc(s['participant'])}{streak_badge}</div>{sub_html}{diamond_strip}</td>
         <td class="num">{group_pts}
           <small>{n_res}&nbsp;riktig resultat</small>
           <small>{n_exact}&nbsp;riktig score</small>
@@ -89,7 +118,9 @@ def _row(s, leader_total):
 def render(standings):
     rows = standings["standings"]
     leader_total = rows[0]["total"] if rows else 0
-    body = "".join(_row(s, leader_total) for s in rows) or \
+    _lr = standings.get("last_result")
+    has_result = bool(_lr and _lr.get("home") and _lr.get("away"))
+    body = "".join(_row(s, leader_total, has_result) for s in rows) or \
         '<tr><td colspan="7" class="empty">Ingen deltakerark er lest inn ennå.</td></tr>'
 
     updated = standings.get("last_updated") or "ikke oppdatert ennå"
@@ -97,6 +128,13 @@ def render(standings):
     played = standings.get("games_played", 0)
     total_games = standings.get("games_total", 104)
     pct = int(round(100 * played / total_games)) if total_games else 0
+
+    lr = standings.get("last_result")
+    if lr and lr.get("home") and lr.get("away"):
+        lh, la = lr["score"]
+        last_result_html = f'{_esc(lr["home"])} <b>{lh}–{la}</b> {_esc(lr["away"])}'
+    else:
+        last_result_html = "—"
 
     return f"""<!doctype html>
 <html lang="no">
@@ -130,9 +168,19 @@ def render(standings):
   .rank {{ width:54px; color:var(--muted); font-variant-numeric:tabular-nums; }}
   .rank span {{ margin-left:4px; }}
   .name {{ font-weight:600; }}
+  .nm {{ display:flex; align-items:center; flex-wrap:wrap; gap:2px; }}
+  .sub {{ font-size:.72rem; color:var(--muted); margin-top:3px; font-weight:400; }}
+  .sub .ok {{ color:var(--accent); font-weight:600; }}
+  .sub .partial {{ color:var(--accent2); font-weight:600; }}
+  .sub .miss {{ color:#e5736b; }}
   .streak {{ margin-left:7px; font-size:.78rem; font-weight:700; color:var(--accent2);
     background:#2a210e; border:1px solid #4a3a12; border-radius:20px; padding:1px 7px;
     white-space:nowrap; }}
+  .dstrip {{ display:flex; flex-wrap:wrap; gap:1px; margin-top:3px; }}
+  .dstrip .d {{ font-size:.82rem; cursor:default; line-height:1; }}
+  .dstrip .d:hover {{ filter:brightness(1.3); }}
+  .rare-chip {{ border-color:#1c4a63; color:#7ad7ff; }}
+  .rare-chip b {{ color:#bfeaff; }}
   .num, .total {{ text-align:right; font-variant-numeric:tabular-nums; }}
   .num small {{ display:block; color:var(--muted); font-size:.7rem; }}
   .tick {{ text-align:center; color:var(--accent); font-weight:700; }}
@@ -166,7 +214,7 @@ def render(standings):
   </header>
 
   <div class="meta">
-    <div class="stat"><b>{len(rows)}</b><span>deltakere</span></div>
+    <div class="stat"><b style="font-size:1.05rem">{last_result_html}</b><span>siste resultat</span></div>
     <div class="stat"><b>{played}<span style="font-size:.9rem"> / {total_games}</span></b>
       <span>kamper spilt</span>
       <div class="progress"><i style="width:{pct}%"></i></div>
@@ -202,8 +250,8 @@ def render(standings):
     Poeng: 1&nbsp;riktig resultat · +2&nbsp;riktig score · 5&nbsp;gruppevinner ·
     7&nbsp;annenplass · 5/8/16/32/20&nbsp;per lag til 16-/åttende-/kvart-/semi-/finale ·
     40&nbsp;verdensmester · 20&nbsp;toppscorer · maks&nbsp;1004.
-    <br>🔥&nbsp;= beste streak med riktige resultater på rad. Trykk på en rad for detaljer.
-    Oppdateres automatisk hver morgen.
+    <br>🔥&nbsp;= antall riktige resultater på rad nå · 💎&nbsp;= traff en eksakt score nesten ingen andre tok.
+    Trykk på en rad for detaljer. {len(rows)}&nbsp;deltakere · oppdateres automatisk hver morgen.
   </footer>
 </div>
 </body>

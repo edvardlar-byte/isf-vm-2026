@@ -178,12 +178,64 @@ def build_standings(preds=None, results=None):
     results = results if results is not None else load_results()
     fixtures = load_fixtures()
     ordered_finished = _finished_in_kickoff_order(fixtures, results)
+    actual = results.get("group_scores", {})
+
+    fx_by_no = {}
+    if fixtures:
+        for m in fixtures["group_matches"]:
+            fx_by_no[str(m["match_no"])] = m
+
+    # Most recent finished match (ordered_finished is ascending by kickoff).
+    last_result = None
+    if ordered_finished:
+        mno = ordered_finished[-1]
+        fm = fx_by_no.get(mno, {})
+        rh, ra = actual[mno]
+        last_result = {"match_no": int(mno), "home": fm.get("home"),
+                       "away": fm.get("away"), "score": [rh, ra], "date": fm.get("date")}
+
+    # How many participants nailed each finished match's exact score.
+    n = len(preds)
+    rare_threshold = max(1, round(n * C.RARE_HIT_FRACTION))
+    exact_hitters = {}
+    for mno in ordered_finished:
+        rh, ra = actual[mno]
+        exact_hitters[mno] = sum(
+            1 for p in preds
+            if (p.get("group_scores", {}).get(mno) or []) == [rh, ra]
+        )
 
     scored = [score_one(p, results) for p in preds]
     for s, p in zip(scored, preds):
         cur, longest = _compute_streaks(p, ordered_finished, results)
         s["detail"]["current_streak"] = cur
         s["detail"]["longest_streak"] = longest
+
+        # Latest guess (for the most recent finished match).
+        lg = {"pred": None, "status": "none"}
+        if last_result:
+            pg = p.get("group_scores", {}).get(str(last_result["match_no"]))
+            if pg:
+                rh, ra = last_result["score"]
+                if pg == [rh, ra]:
+                    st = "exact"
+                elif _sign(pg[0], pg[1]) == _sign(rh, ra):
+                    st = "result"
+                else:
+                    st = "wrong"
+                lg = {"pred": pg, "status": st}
+        s["detail"]["latest_guess"] = lg
+
+        # Rare hits: exact scorelines almost nobody else got.
+        rares = []
+        for mno in ordered_finished:
+            rh, ra = actual[mno]
+            pg = p.get("group_scores", {}).get(mno)
+            if pg == [rh, ra] and exact_hitters[mno] <= rare_threshold:
+                fm = fx_by_no.get(mno, {})
+                rares.append({"label": f"{fm.get('home', '?')}–{fm.get('away', '?')}",
+                              "score": [rh, ra], "hitters": exact_hitters[mno]})
+        s["detail"]["rare_hits"] = rares
 
     # Sort by total desc, then exact-score count desc, then name.
     scored.sort(key=lambda s: (-s["total"], -len(s["detail"]["exact_scores"]),
@@ -204,6 +256,7 @@ def build_standings(preds=None, results=None):
         "points_decided": _points_decided(results),
         "games_played": results.get("games_played", len(results.get("group_scores", {}))),
         "games_total": results.get("games_total", 104),
+        "last_result": last_result,
         "standings": scored,
     }
 

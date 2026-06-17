@@ -106,6 +106,10 @@ THIRD_PLACE_HEADER_TEXT = "Third-Place Play-Off"
 
 SCAN_LAST_ROW = 110
 
+# A "rare hit" 💎 = a correct EXACT scoreline that at most this fraction of
+# participants also got (min 1). With ~24 players, 0.10 -> at most 2 people.
+RARE_HIT_FRACTION = 0.10
+
 # Optional cell where a participant may have typed their top-scorer pick.
 # The parser scans the whole sheet for a label matching TOPSCORER_LABELS and
 # reads the cell immediately to its right. Falls back to data/topscorers.csv.
