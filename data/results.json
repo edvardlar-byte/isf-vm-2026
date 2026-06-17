@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16 12:46",
+  "last_updated": "2026-06-17 10:54",
   "group_scores": {
     "1": [
       2,
@@ -64,6 +64,22 @@
     "15": [
       2,
       2
+    ],
+    "17": [
+      3,
+      1
+    ],
+    "18": [
+      1,
+      4
+    ],
+    "19": [
+      3,
+      0
+    ],
+    "20": [
+      3,
+      1
     ]
   },
   "group_winners": {},
@@ -79,6 +95,10 @@
   "top_scorer": null,
   "goal_leaderboard": [
     {
+      "player": "Lionel Messi",
+      "goals": 3
+    },
+    {
       "player": "Kai Havertz",
       "goals": 2
     },
@@ -88,6 +108,18 @@
     },
     {
       "player": "Elijah Just",
+      "goals": 2
+    },
+    {
+      "player": "Kylian Mbappé",
+      "goals": 2
+    },
+    {
+      "player": "Erling Haaland",
+      "goals": 2
+    },
+    {
+      "player": "Marko Arnautovic",
       "goals": 2
     },
     {
@@ -121,25 +153,9 @@
     {
       "player": "Giovanni Reyna",
       "goals": 1
-    },
-    {
-      "player": "Breel Embolo",
-      "goals": 1
-    },
-    {
-      "player": "Boualem Khoukhi",
-      "goals": 1
-    },
-    {
-      "player": "Ismael Saibari",
-      "goals": 1
-    },
-    {
-      "player": "Vinicius Junior",
-      "goals": 1
     }
   ],
-  "games_played": 16,
+  "games_played": 20,
   "games_total": 72,
-  "current_goal_leader": "Kai Havertz"
+  "current_goal_leader": "Lionel Messi"
 }
