@@ -141,25 +141,29 @@ def render(standings):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
 <title>ISF VM 2026 — Tippekonkurranse</title>
 <style>
   :root {{
-    --bg:#0e1116; --card:#171c24; --line:#262d38; --txt:#e6eaf0; --muted:#8b94a3;
-    --accent:#36c98b; --accent2:#f5c451; --bar:#36c98b;
+    --bg:#ffffff; --card:#f6f7f3; --line:#e4e6df; --txt:#141414; --muted:#6b7280;
+    --accent:#2e9e3f; --accent2:#141414; --bar:#8ace00; --brat:#8ace00;
   }}
   * {{ box-sizing:border-box; }}
   body {{ margin:0; background:var(--bg); color:var(--txt);
-    font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }}
+    font:15px/1.45 Arial, Helvetica, sans-serif; }}
   .wrap {{ max-width:920px; margin:0 auto; padding:24px 16px 64px; }}
-  header h1 {{ margin:.2em 0 .1em; font-size:1.7rem; letter-spacing:.2px; }}
-  header p {{ margin:0; color:var(--muted); }}
+  header {{ background:var(--brat); border-radius:16px; padding:16px 22px 18px;
+    margin-bottom:18px; }}
+  header h1 {{ margin:.12em 0 .12em; font-size:1.75rem; font-weight:700;
+    letter-spacing:-.6px; text-transform:lowercase; color:#0c0c0c; }}
+  header p {{ margin:0; color:#1f3d05; text-transform:lowercase; }}
   .meta {{ display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 10px; }}
   .stat {{ background:var(--card); border:1px solid var(--line); border-radius:12px;
     padding:10px 14px; flex:1; min-width:150px; }}
   .stat b {{ display:block; font-size:1.3rem; }}
   .stat span {{ color:var(--muted); font-size:.82rem; }}
   .progress {{ height:8px; background:var(--line); border-radius:6px; overflow:hidden; margin-top:8px; }}
-  .progress i {{ display:block; height:100%; background:var(--accent2); }}
+  .progress i {{ display:block; height:100%; background:var(--bar); }}
   table {{ width:100%; border-collapse:collapse; margin-top:10px; }}
   thead th {{ text-align:left; font-size:.74rem; text-transform:uppercase; letter-spacing:.6px;
     color:var(--muted); padding:8px 10px; border-bottom:1px solid var(--line); }}
@@ -170,16 +174,17 @@ def render(standings):
   .name {{ font-weight:600; }}
   .nm {{ display:flex; align-items:center; flex-wrap:wrap; gap:2px; }}
   .sub {{ font-size:.72rem; color:var(--muted); margin-top:3px; font-weight:400; }}
-  .sub .ok {{ color:var(--accent); font-weight:600; }}
-  .sub .partial {{ color:var(--accent2); font-weight:600; }}
-  .sub .miss {{ color:#e5736b; }}
-  .streak {{ margin-left:7px; font-size:.78rem; font-weight:700; color:var(--accent2);
-    background:#2a210e; border:1px solid #4a3a12; border-radius:20px; padding:1px 7px;
+  .sub .ok {{ color:#1b8a2b; font-weight:700; }}
+  .sub .partial {{ color:#b07900; font-weight:700; }}
+  .sub .miss {{ color:#c0392b; }}
+  .streak {{ margin-left:7px; font-size:.78rem; font-weight:700; color:#7a5d00;
+    background:#fff7d6; border:1px solid #e6cf7a; border-radius:20px; padding:1px 7px;
     white-space:nowrap; }}
   .dstrip {{ display:flex; flex-wrap:wrap; gap:1px; margin-top:3px; }}
   .dstrip .d {{ font-size:.82rem; cursor:default; line-height:1; }}
-  .dstrip .d:hover {{ filter:brightness(1.3); }}
-  .rare-chip {{ border-color:#1c4a63; color:#7ad7ff; }}
+  .dstrip .d:hover {{ filter:brightness(1.15); }}
+  .rare-chip {{ background:#eef7ff; border-color:#bcdcf2; color:#1666a3; }}
+  .rare-chip b {{ color:#141414; }}
   .rare-chip b {{ color:#bfeaff; }}
   .num, .total {{ text-align:right; font-variant-numeric:tabular-nums; }}
   .num small {{ display:block; color:var(--muted); font-size:.7rem; }}
@@ -187,14 +192,14 @@ def render(standings):
   .total {{ font-size:1.15rem; font-weight:700; min-width:120px; }}
   .bar {{ height:5px; background:var(--line); border-radius:4px; margin-top:5px; }}
   .bar i {{ display:block; height:100%; background:var(--bar); border-radius:4px; }}
-  .rank-1 .total {{ color:var(--accent2); }}
+  .rank-1 .total {{ color:#3a9d00; }}
   .prow {{ cursor:pointer; }}
-  .prow:hover td {{ background:#1b212b; }}
+  .prow:hover td {{ background:rgba(0,0,0,.035); }}
   tbody.collapsed .detail {{ display:none; }}
   tbody.collapsed .detail.show {{ display:table-row; }}
   .detail td {{ padding:0 10px 12px; border-bottom:1px solid var(--line); }}
   .chips {{ display:flex; flex-wrap:wrap; gap:6px; }}
-  .chip {{ background:#10151c; border:1px solid var(--line); border-radius:20px;
+  .chip {{ background:#f1f2ee; border:1px solid var(--line); border-radius:20px;
     padding:3px 10px; font-size:.78rem; color:var(--muted); }}
   .chip b {{ color:var(--txt); }}
   .chip.muted {{ font-style:italic; }}
@@ -209,7 +214,7 @@ def render(standings):
 <div class="wrap">
   <header>
     <p>ISF · Verdensmesterskapet i fotball 2026</p>
-    <h1>⚽ Tippekonkurranse</h1>
+    <h1>Tippekonkurranse — Braut Summer 2026</h1>
     <p>Hvem leder kontorets VM-konkurranse?</p>
   </header>
 
