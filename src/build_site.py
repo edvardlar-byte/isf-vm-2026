@@ -210,12 +210,12 @@ def render(standings):
   .name {{ font-weight:600; }}
   .nm {{ display:flex; align-items:center; flex-wrap:wrap; gap:2px; }}
   .who {{ margin-right:1px; }}
-  .avatar {{ width:34px; height:34px; border-radius:50%; object-fit:cover; margin-right:9px;
-    border:1.5px solid var(--brat); flex:0 0 auto; background:#e9ece3; }}
+  .avatar {{ width:48px; height:48px; border-radius:50%; object-fit:cover; margin-right:11px;
+    border:2px solid var(--brat); flex:0 0 auto; background:#e9ece3; }}
   .avatar-ph {{ display:inline-flex; align-items:center; justify-content:center;
-    font-size:.72rem; font-weight:700; color:#3d5212; }}
-  .sub {{ font-size:.72rem; color:var(--muted); margin-top:3px; font-weight:400; margin-left:43px; }}
-  .dstrip {{ margin-left:43px; }}
+    font-size:.95rem; font-weight:700; color:#3d5212; }}
+  .sub {{ font-size:.72rem; color:var(--muted); margin-top:3px; font-weight:400; margin-left:59px; }}
+  .dstrip {{ margin-left:59px; }}
   .sub .ok {{ color:#1b8a2b; font-weight:700; }}
   .sub .partial {{ color:#b07900; font-weight:700; }}
   .sub .miss {{ color:#c0392b; }}
