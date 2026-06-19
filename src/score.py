@@ -237,6 +237,21 @@ def build_standings(preds=None, results=None):
                               "score": [rh, ra], "hitters": exact_hitters[mno]})
         s["detail"]["rare_hits"] = rares
 
+    # Awards (ties share the award): most correct results, most exact scores,
+    # most rare-hit diamonds. Only awarded when the leading total is > 0.
+    def _leaders(metric):
+        vals = [metric(s) for s in scored]
+        top = max(vals, default=0)
+        return top, top > 0
+    max_res, ok_res = _leaders(lambda s: s["detail"]["correct_outcomes"])
+    max_sc, ok_sc = _leaders(lambda s: len(s["detail"]["exact_scores"]))
+    max_dia, ok_dia = _leaders(lambda s: len(s["detail"]["rare_hits"]))
+    for s in scored:
+        d = s["detail"]
+        d["award_results"] = ok_res and d["correct_outcomes"] == max_res
+        d["award_scores"] = ok_sc and len(d["exact_scores"]) == max_sc
+        d["award_diamonds"] = ok_dia and len(d["rare_hits"]) == max_dia
+
     # Sort by total desc, then exact-score count desc, then name.
     scored.sort(key=lambda s: (-s["total"], -len(s["detail"]["exact_scores"]),
                                s["participant"].lower()))

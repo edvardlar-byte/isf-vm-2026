@@ -57,6 +57,17 @@ def _row(s, leader_total, has_result):
     streak_badge = (f'<span class="streak" title="{cur_streak} riktige resultater på rad nå">'
                     f'🔥{cur_streak}</span>') if cur_streak >= 2 else ""
 
+    # 🏆 awards (shared on ties): most correct results / exact scores / diamonds.
+    award_defs = [
+        ("award_results", "✅", "Flest riktige resultater!"),
+        ("award_scores", "🎯", "Flest riktige scores!"),
+        ("award_diamonds", "👑", "Flest diamanter!"),
+    ]
+    award_badges = "".join(
+        f'<span class="award" title="{label}">{emoji}</span>'
+        for key, emoji, label in award_defs if det.get(key)
+    )
+
     # 💎 rare-hit collection: one hoverable diamond per exact score almost
     # nobody else got — a running "precognition" side contest.
     diamond_strip = ""
@@ -83,6 +94,9 @@ def _row(s, leader_total, has_result):
 
     # Per-category breakdown chips for the expandable detail.
     chips = []
+    for key, emoji, label in award_defs:
+        if det.get(key):
+            chips.append(f'<span class="chip award-chip">{emoji} {_esc(label)}</span>')
     for key, label in CATEGORY_LABELS:
         if bd[key]:
             chips.append(f'<span class="chip">{_esc(label)}: <b>{bd[key]}</b>&nbsp;p</span>')
@@ -99,7 +113,7 @@ def _row(s, leader_total, has_result):
     return f"""
       <tr class="prow {rank_cls}">
         <td class="rank">{medal}<span>{s['rank']}</span></td>
-        <td class="name"><div class="nm">{_esc(s['participant'])}{streak_badge}</div>{sub_html}{diamond_strip}</td>
+        <td class="name"><div class="nm">{_esc(s['participant'])}{streak_badge}{award_badges}</div>{sub_html}{diamond_strip}</td>
         <td class="num">{group_pts}
           <small>{n_res}&nbsp;riktig resultat</small>
           <small>{n_exact}&nbsp;riktig score</small>
@@ -185,6 +199,9 @@ def render(standings):
   .dstrip .d:hover {{ filter:brightness(1.15); }}
   .rare-chip {{ background:#eef7ff; border-color:#bcdcf2; color:#1666a3; }}
   .rare-chip b {{ color:#141414; }}
+  .award {{ margin-left:5px; font-size:.8rem; line-height:1; background:#f3f7e6;
+    border:1px solid #c4d98a; border-radius:20px; padding:1px 6px; cursor:default; }}
+  .award-chip {{ background:#f3f7e6; border-color:#c4d98a; color:#3d5212; font-weight:600; }}
   .rare-chip b {{ color:#bfeaff; }}
   .num, .total {{ text-align:right; font-variant-numeric:tabular-nums; }}
   .num small {{ display:block; color:var(--muted); font-size:.7rem; }}
@@ -255,7 +272,8 @@ def render(standings):
     Poeng: 1&nbsp;riktig resultat · +2&nbsp;riktig score · 5&nbsp;gruppevinner ·
     7&nbsp;annenplass · 5/8/16/32/20&nbsp;per lag til 16-/åttende-/kvart-/semi-/finale ·
     40&nbsp;verdensmester · 20&nbsp;toppscorer · maks&nbsp;1004.
-    <br>🔥&nbsp;= antall riktige resultater på rad nå · 💎&nbsp;= traff en eksakt score nesten ingen andre tok.
+    <br>🔥&nbsp;= riktige resultater på rad nå · 💎&nbsp;= traff en eksakt score nesten ingen andre tok ·
+    ✅&nbsp;flest riktige resultater · 🎯&nbsp;flest riktige scores · 👑&nbsp;flest diamanter.
     Trykk på en rad for detaljer. {len(rows)}&nbsp;deltakere · oppdateres automatisk hver morgen.
   </footer>
 </div>
