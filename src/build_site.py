@@ -31,10 +31,20 @@ CATEGORY_LABELS = [
 ]
 
 MEDAL = {1: "🥇", 2: "🥈", 3: "🥉"}
+PHOTO_DIR = os.path.join(C.DOCS_DIR, "photos")
 
 
 def _esc(s):
     return html.escape(str(s)) if s is not None else ""
+
+
+def _avatar(name):
+    """Round profile photo if we have one, else an initials placeholder."""
+    slug = C.slugify(name)
+    if os.path.exists(os.path.join(PHOTO_DIR, f"{slug}.jpg")):
+        return f'<img class="avatar" src="photos/{slug}.jpg" alt="" loading="lazy">'
+    initials = "".join(w[0] for w in name.split()[:2]).upper() or "?"
+    return f'<span class="avatar avatar-ph">{_esc(initials)}</span>'
 
 
 def _row(s, leader_total, has_result):
@@ -113,7 +123,7 @@ def _row(s, leader_total, has_result):
     return f"""
       <tr class="prow {rank_cls}">
         <td class="rank">{medal}<span>{s['rank']}</span></td>
-        <td class="name"><div class="nm">{_esc(s['participant'])}{streak_badge}{award_badges}</div>{sub_html}{diamond_strip}</td>
+        <td class="name"><div class="nm">{_avatar(s['participant'])}<span class="who">{_esc(s['participant'])}</span>{streak_badge}{award_badges}</div>{sub_html}{diamond_strip}</td>
         <td class="num">{group_pts}
           <small>{n_res}&nbsp;riktig resultat</small>
           <small>{n_exact}&nbsp;riktig score</small>
@@ -156,6 +166,7 @@ def render(standings):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#ffffff">
+<meta name="robots" content="noindex, nofollow">
 <title>ISF VM 2026 — Tippekonkurranse</title>
 <style>
   :root {{
@@ -187,7 +198,13 @@ def render(standings):
   .rank span {{ margin-left:4px; }}
   .name {{ font-weight:600; }}
   .nm {{ display:flex; align-items:center; flex-wrap:wrap; gap:2px; }}
-  .sub {{ font-size:.72rem; color:var(--muted); margin-top:3px; font-weight:400; }}
+  .who {{ margin-right:1px; }}
+  .avatar {{ width:34px; height:34px; border-radius:50%; object-fit:cover; margin-right:9px;
+    border:1.5px solid var(--brat); flex:0 0 auto; background:#e9ece3; }}
+  .avatar-ph {{ display:inline-flex; align-items:center; justify-content:center;
+    font-size:.72rem; font-weight:700; color:#3d5212; }}
+  .sub {{ font-size:.72rem; color:var(--muted); margin-top:3px; font-weight:400; margin-left:43px; }}
+  .dstrip {{ margin-left:43px; }}
   .sub .ok {{ color:#1b8a2b; font-weight:700; }}
   .sub .partial {{ color:#b07900; font-weight:700; }}
   .sub .miss {{ color:#c0392b; }}

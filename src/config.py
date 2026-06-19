@@ -159,6 +159,18 @@ TEAM_ALIASES = {
 }
 
 
+def slugify(name):
+    """ASCII, web-safe slug for filenames/URLs. 'Håkon' -> 'hakon'."""
+    import re
+    import unicodedata
+    s = str(name)
+    for a, b in (("ø", "o"), ("Ø", "o"), ("æ", "ae"), ("Æ", "ae"), ("å", "a"), ("Å", "a")):
+        s = s.replace(a, b)
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"[^a-zA-Z0-9]+", "-", s).strip("-").lower()
+
+
 def canonical_team(name):
     """Return the canonical team name for any spelling variant."""
     if name is None:
