@@ -31,7 +31,17 @@ CATEGORY_LABELS = [
 ]
 
 MEDAL = {1: "🥇", 2: "🥈", 3: "🥉"}
-PHOTO_DIR = os.path.join(C.DOCS_DIR, "photos")
+PHOTO_URLS_FILE = os.path.join(C.DATA_DIR, "photo_urls.json")
+
+
+def _load_photo_urls():
+    if os.path.exists(PHOTO_URLS_FILE):
+        with open(PHOTO_URLS_FILE, encoding="utf-8") as f:
+            return {k: v for k, v in json.load(f).items() if not k.startswith("_")}
+    return {}
+
+
+PHOTO_URLS = _load_photo_urls()
 
 
 def _esc(s):
@@ -39,10 +49,11 @@ def _esc(s):
 
 
 def _avatar(name):
-    """Round profile photo if we have one, else an initials placeholder."""
-    slug = C.slugify(name)
-    if os.path.exists(os.path.join(PHOTO_DIR, f"{slug}.jpg")):
-        return f'<img class="avatar" src="photos/{slug}.jpg" alt="" loading="lazy">'
+    """Hot-linked profile photo from the institute site, else initials."""
+    url = PHOTO_URLS.get(name)
+    if url:
+        return (f'<img class="avatar" src="{_esc(url)}" alt="" loading="lazy" '
+                f'referrerpolicy="no-referrer">')
     initials = "".join(w[0] for w in name.split()[:2]).upper() or "?"
     return f'<span class="avatar avatar-ph">{_esc(initials)}</span>'
 
