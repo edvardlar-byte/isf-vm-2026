@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22 12:25",
+  "last_updated": "2026-06-23 10:30",
   "group_scores": {
     "1": [
       2,
@@ -160,6 +160,22 @@
     "40": [
       1,
       3
+    ],
+    "43": [
+      2,
+      0
+    ],
+    "42": [
+      3,
+      0
+    ],
+    "41": [
+      3,
+      2
+    ],
+    "44": [
+      1,
+      2
     ]
   },
   "group_winners": {},
@@ -175,15 +191,19 @@
   "top_scorer": null,
   "goal_leaderboard": [
     {
-      "player": "Deniz Undav",
-      "goals": 3
+      "player": "Kylian Mbappé",
+      "goals": 5
     },
     {
-      "player": "Kylian Mbappé",
-      "goals": 3
+      "player": "Erling Haaland",
+      "goals": 4
     },
     {
       "player": "Lionel Messi",
+      "goals": 4
+    },
+    {
+      "player": "Deniz Undav",
       "goals": 3
     },
     {
@@ -219,10 +239,6 @@
       "goals": 2
     },
     {
-      "player": "Erling Haaland",
-      "goals": 2
-    },
-    {
       "player": "Marko Arnautovic",
       "goals": 2
     },
@@ -235,7 +251,7 @@
       "goals": 2
     }
   ],
-  "games_played": 40,
+  "games_played": 44,
   "games_total": 72,
-  "current_goal_leader": "Deniz Undav"
+  "current_goal_leader": "Kylian Mbappé"
 }
