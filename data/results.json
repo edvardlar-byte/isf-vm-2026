@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23 10:01",
+  "last_updated": "2026-06-24 08:33",
   "group_scores": {
     "1": [
       2,
@@ -176,6 +176,22 @@
     "44": [
       1,
       2
+    ],
+    "47": [
+      5,
+      0
+    ],
+    "45": [
+      0,
+      0
+    ],
+    "46": [
+      0,
+      1
+    ],
+    "48": [
+      1,
+      0
     ]
   },
   "group_winners": {},
@@ -243,15 +259,15 @@
       "goals": 2
     },
     {
-      "player": "Ayase Ueda",
+      "player": "Daniel Muñoz",
       "goals": 2
     },
     {
-      "player": "Mikel Oyarzabal",
+      "player": "Ayase Ueda",
       "goals": 2
     }
   ],
-  "games_played": 44,
+  "games_played": 48,
   "games_total": 72,
   "current_goal_leader": "Kylian Mbappé"
 }

@@ -1,25 +1,77 @@
 {
-  "last_updated": "2026-06-23 10:01",
+  "last_updated": "2026-06-24 08:33",
   "max_possible": 1004,
-  "points_decided": 132,
-  "games_played": 44,
+  "points_decided": 144,
+  "games_played": 48,
   "games_total": 72,
   "last_result": {
-    "match_no": 44,
-    "home": "Jordan",
-    "away": "Algeria",
+    "match_no": 48,
+    "home": "Colombia",
+    "away": "DR Congo",
     "score": [
       1,
-      2
+      0
     ],
-    "date": "Jun 23, 2026"
+    "date": "Jun 24, 2026"
   },
   "standings": [
     {
-      "participant": "Liza",
-      "total": 41,
+      "participant": "Audun",
+      "total": 45,
       "breakdown": {
-        "group_outcome": 27,
+        "group_outcome": 31,
+        "group_exact": 14,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "17",
+          "18",
+          "19",
+          "31",
+          "38",
+          "43",
+          "48"
+        ],
+        "correct_outcomes": 31,
+        "current_streak": 9,
+        "longest_streak": 9,
+        "latest_guess": {
+          "pred": [
+            1,
+            0
+          ],
+          "status": "exact"
+        },
+        "rare_hits": [
+          {
+            "label": "Iraq–Norway",
+            "score": [
+              1,
+              4
+            ],
+            "hitters": 2
+          }
+        ],
+        "award_results": true,
+        "award_scores": false,
+        "award_diamonds": false
+      },
+      "rank": 1
+    },
+    {
+      "participant": "Liza",
+      "total": 44,
+      "breakdown": {
+        "group_outcome": 30,
         "group_exact": 14,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -41,13 +93,13 @@
           "25",
           "42"
         ],
-        "correct_outcomes": 27,
-        "current_streak": 1,
+        "correct_outcomes": 30,
+        "current_streak": 2,
         "longest_streak": 8,
         "latest_guess": {
           "pred": [
-            0,
-            1
+            2,
+            0
           ],
           "status": "result"
         },
@@ -78,76 +130,16 @@
           }
         ],
         "award_results": false,
-        "award_scores": true,
+        "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 1
-    },
-    {
-      "participant": "Runa",
-      "total": 41,
-      "breakdown": {
-        "group_outcome": 27,
-        "group_exact": 14,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "1",
-          "9",
-          "16",
-          "21",
-          "31",
-          "29",
-          "42"
-        ],
-        "correct_outcomes": 27,
-        "current_streak": 0,
-        "longest_streak": 5,
-        "latest_guess": {
-          "pred": [
-            1,
-            1
-          ],
-          "status": "wrong"
-        },
-        "rare_hits": [
-          {
-            "label": "Ivory Coast–Ecuador",
-            "score": [
-              1,
-              0
-            ],
-            "hitters": 2
-          },
-          {
-            "label": "Ghana–Panama",
-            "score": [
-              1,
-              0
-            ],
-            "hitters": 2
-          }
-        ],
-        "award_results": false,
-        "award_scores": true,
-        "award_diamonds": false
-      },
-      "rank": 1
+      "rank": 2
     },
     {
       "participant": "Mari BH",
-      "total": 40,
+      "total": 44,
       "breakdown": {
-        "group_outcome": 26,
+        "group_outcome": 30,
         "group_exact": 14,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -169,13 +161,13 @@
           "43",
           "42"
         ],
-        "correct_outcomes": 26,
-        "current_streak": 1,
+        "correct_outcomes": 30,
+        "current_streak": 5,
         "longest_streak": 5,
         "latest_guess": {
           "pred": [
-            0,
-            1
+            2,
+            0
           ],
           "status": "result"
         },
@@ -206,16 +198,76 @@
           }
         ],
         "award_results": false,
-        "award_scores": true,
+        "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 3
+      "rank": 2
+    },
+    {
+      "participant": "Runa",
+      "total": 44,
+      "breakdown": {
+        "group_outcome": 30,
+        "group_exact": 14,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1",
+          "9",
+          "16",
+          "21",
+          "31",
+          "29",
+          "42"
+        ],
+        "correct_outcomes": 30,
+        "current_streak": 2,
+        "longest_streak": 5,
+        "latest_guess": {
+          "pred": [
+            2,
+            1
+          ],
+          "status": "result"
+        },
+        "rare_hits": [
+          {
+            "label": "Ivory Coast–Ecuador",
+            "score": [
+              1,
+              0
+            ],
+            "hitters": 2
+          },
+          {
+            "label": "Ghana–Panama",
+            "score": [
+              1,
+              0
+            ],
+            "hitters": 2
+          }
+        ],
+        "award_results": false,
+        "award_scores": false,
+        "award_diamonds": false
+      },
+      "rank": 2
     },
     {
       "participant": "Nina",
-      "total": 40,
+      "total": 42,
       "breakdown": {
-        "group_outcome": 28,
+        "group_outcome": 30,
         "group_exact": 12,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -236,15 +288,15 @@
           "29",
           "44"
         ],
-        "correct_outcomes": 28,
-        "current_streak": 5,
+        "correct_outcomes": 30,
+        "current_streak": 1,
         "longest_streak": 8,
         "latest_guess": {
           "pred": [
-            1,
-            2
+            2,
+            0
           ],
-          "status": "exact"
+          "status": "result"
         },
         "rare_hits": [
           {
@@ -256,18 +308,18 @@
             "hitters": 2
           }
         ],
-        "award_results": true,
+        "award_results": false,
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 3
+      "rank": 5
     },
     {
-      "participant": "Audun",
-      "total": 39,
+      "participant": "Miriam",
+      "total": 40,
       "breakdown": {
-        "group_outcome": 27,
-        "group_exact": 12,
+        "group_outcome": 26,
+        "group_exact": 14,
         "group_winner": 0,
         "group_runner_up": 0,
         "reach_R32": 0,
@@ -280,29 +332,54 @@
       },
       "detail": {
         "exact_scores": [
-          "17",
-          "18",
-          "19",
-          "31",
-          "38",
-          "43"
+          "8",
+          "5",
+          "24",
+          "43",
+          "44",
+          "46",
+          "48"
         ],
-        "correct_outcomes": 27,
-        "current_streak": 5,
-        "longest_streak": 6,
+        "correct_outcomes": 26,
+        "current_streak": 2,
+        "longest_streak": 5,
         "latest_guess": {
           "pred": [
-            0,
-            1
+            1,
+            0
           ],
-          "status": "result"
+          "status": "exact"
         },
         "rare_hits": [
           {
-            "label": "Iraq–Norway",
+            "label": "Qatar–Switzerland",
             "score": [
               1,
-              4
+              1
+            ],
+            "hitters": 1
+          },
+          {
+            "label": "Haiti–Scotland",
+            "score": [
+              0,
+              1
+            ],
+            "hitters": 2
+          },
+          {
+            "label": "Uzbekistan–Colombia",
+            "score": [
+              1,
+              3
+            ],
+            "hitters": 2
+          },
+          {
+            "label": "Jordan–Algeria",
+            "score": [
+              1,
+              2
             ],
             "hitters": 2
           }
@@ -311,13 +388,63 @@
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 5
+      "rank": 6
+    },
+    {
+      "participant": "Julia",
+      "total": 40,
+      "breakdown": {
+        "group_outcome": 30,
+        "group_exact": 10,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "9",
+          "25",
+          "29",
+          "42",
+          "48"
+        ],
+        "correct_outcomes": 30,
+        "current_streak": 2,
+        "longest_streak": 6,
+        "latest_guess": {
+          "pred": [
+            1,
+            0
+          ],
+          "status": "exact"
+        },
+        "rare_hits": [
+          {
+            "label": "Ivory Coast–Ecuador",
+            "score": [
+              1,
+              0
+            ],
+            "hitters": 2
+          }
+        ],
+        "award_results": false,
+        "award_scores": false,
+        "award_diamonds": false
+      },
+      "rank": 6
     },
     {
       "participant": "Håkon",
-      "total": 36,
+      "total": 39,
       "breakdown": {
-        "group_outcome": 24,
+        "group_outcome": 27,
         "group_exact": 12,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -338,15 +465,15 @@
           "25",
           "38"
         ],
-        "correct_outcomes": 24,
-        "current_streak": 0,
+        "correct_outcomes": 27,
+        "current_streak": 2,
         "longest_streak": 5,
         "latest_guess": {
           "pred": [
-            1,
+            2,
             1
           ],
-          "status": "wrong"
+          "status": "result"
         },
         "rare_hits": [
           {
@@ -362,14 +489,14 @@
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 6
+      "rank": 8
     },
     {
       "participant": "Harald",
-      "total": 35,
+      "total": 38,
       "breakdown": {
-        "group_outcome": 21,
-        "group_exact": 14,
+        "group_outcome": 22,
+        "group_exact": 16,
         "group_winner": 0,
         "group_runner_up": 0,
         "reach_R32": 0,
@@ -388,9 +515,10 @@
           "28",
           "30",
           "29",
-          "34"
+          "34",
+          "46"
         ],
-        "correct_outcomes": 21,
+        "correct_outcomes": 22,
         "current_streak": 0,
         "longest_streak": 3,
         "latest_guess": {
@@ -446,13 +574,13 @@
         "award_scores": true,
         "award_diamonds": true
       },
-      "rank": 7
+      "rank": 9
     },
     {
       "participant": "Jan-Paul",
-      "total": 35,
+      "total": 38,
       "breakdown": {
-        "group_outcome": 27,
+        "group_outcome": 30,
         "group_exact": 8,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -471,13 +599,13 @@
           "31",
           "29"
         ],
-        "correct_outcomes": 27,
-        "current_streak": 5,
+        "correct_outcomes": 30,
+        "current_streak": 2,
         "longest_streak": 7,
         "latest_guess": {
           "pred": [
-            0,
-            2
+            3,
+            1
           ],
           "status": "result"
         },
@@ -495,136 +623,13 @@
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 7
-    },
-    {
-      "participant": "Julia",
-      "total": 35,
-      "breakdown": {
-        "group_outcome": 27,
-        "group_exact": 8,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "9",
-          "25",
-          "29",
-          "42"
-        ],
-        "correct_outcomes": 27,
-        "current_streak": 0,
-        "longest_streak": 6,
-        "latest_guess": {
-          "pred": [
-            0,
-            0
-          ],
-          "status": "wrong"
-        },
-        "rare_hits": [
-          {
-            "label": "Ivory Coast–Ecuador",
-            "score": [
-              1,
-              0
-            ],
-            "hitters": 2
-          }
-        ],
-        "award_results": false,
-        "award_scores": false,
-        "award_diamonds": false
-      },
-      "rank": 7
-    },
-    {
-      "participant": "Miriam",
-      "total": 33,
-      "breakdown": {
-        "group_outcome": 23,
-        "group_exact": 10,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "8",
-          "5",
-          "24",
-          "43",
-          "44"
-        ],
-        "correct_outcomes": 23,
-        "current_streak": 4,
-        "longest_streak": 4,
-        "latest_guess": {
-          "pred": [
-            1,
-            2
-          ],
-          "status": "exact"
-        },
-        "rare_hits": [
-          {
-            "label": "Qatar–Switzerland",
-            "score": [
-              1,
-              1
-            ],
-            "hitters": 1
-          },
-          {
-            "label": "Haiti–Scotland",
-            "score": [
-              0,
-              1
-            ],
-            "hitters": 2
-          },
-          {
-            "label": "Uzbekistan–Colombia",
-            "score": [
-              1,
-              3
-            ],
-            "hitters": 2
-          },
-          {
-            "label": "Jordan–Algeria",
-            "score": [
-              1,
-              2
-            ],
-            "hitters": 2
-          }
-        ],
-        "award_results": false,
-        "award_scores": false,
-        "award_diamonds": false
-      },
-      "rank": 10
+      "rank": 9
     },
     {
       "participant": "Trond",
-      "total": 33,
+      "total": 36,
       "breakdown": {
-        "group_outcome": 25,
+        "group_outcome": 28,
         "group_exact": 8,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -643,28 +648,77 @@
           "29",
           "42"
         ],
-        "correct_outcomes": 25,
-        "current_streak": 0,
+        "correct_outcomes": 28,
+        "current_streak": 2,
         "longest_streak": 5,
         "latest_guess": {
           "pred": [
-            0,
+            2,
             0
           ],
-          "status": "wrong"
+          "status": "result"
         },
         "rare_hits": [],
         "award_results": false,
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 10
+      "rank": 11
+    },
+    {
+      "participant": "Daniel",
+      "total": 35,
+      "breakdown": {
+        "group_outcome": 27,
+        "group_exact": 8,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1",
+          "2",
+          "19",
+          "47"
+        ],
+        "correct_outcomes": 27,
+        "current_streak": 1,
+        "longest_streak": 5,
+        "latest_guess": {
+          "pred": [
+            2,
+            0
+          ],
+          "status": "result"
+        },
+        "rare_hits": [
+          {
+            "label": "Portugal–Uzbekistan",
+            "score": [
+              5,
+              0
+            ],
+            "hitters": 1
+          }
+        ],
+        "award_results": false,
+        "award_scores": false,
+        "award_diamonds": false
+      },
+      "rank": 12
     },
     {
       "participant": "Sara Seehuus",
-      "total": 32,
+      "total": 34,
       "breakdown": {
-        "group_outcome": 22,
+        "group_outcome": 24,
         "group_exact": 10,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -684,15 +738,15 @@
           "43",
           "42"
         ],
-        "correct_outcomes": 22,
-        "current_streak": 1,
+        "correct_outcomes": 24,
+        "current_streak": 0,
         "longest_streak": 5,
         "latest_guess": {
           "pred": [
-            0,
+            1,
             1
           ],
-          "status": "result"
+          "status": "wrong"
         },
         "rare_hits": [
           {
@@ -708,14 +762,54 @@
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 12
+      "rank": 13
     },
     {
-      "participant": "Daniel",
-      "total": 31,
+      "participant": "Johannes Due",
+      "total": 34,
+      "breakdown": {
+        "group_outcome": 26,
+        "group_exact": 8,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "17",
+          "25",
+          "43",
+          "48"
+        ],
+        "correct_outcomes": 26,
+        "current_streak": 4,
+        "longest_streak": 5,
+        "latest_guess": {
+          "pred": [
+            1,
+            0
+          ],
+          "status": "exact"
+        },
+        "rare_hits": [],
+        "award_results": false,
+        "award_scores": false,
+        "award_diamonds": false
+      },
+      "rank": 13
+    },
+    {
+      "participant": "Marjan",
+      "total": 33,
       "breakdown": {
         "group_outcome": 25,
-        "group_exact": 6,
+        "group_exact": 8,
         "group_winner": 0,
         "group_runner_up": 0,
         "reach_R32": 0,
@@ -730,11 +824,12 @@
         "exact_scores": [
           "1",
           "2",
-          "19"
+          "43",
+          "46"
         ],
         "correct_outcomes": 25,
         "current_streak": 0,
-        "longest_streak": 5,
+        "longest_streak": 6,
         "latest_guess": {
           "pred": [
             2,
@@ -747,13 +842,13 @@
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 13
+      "rank": 15
     },
     {
       "participant": "Knut",
-      "total": 30,
+      "total": 33,
       "breakdown": {
-        "group_outcome": 26,
+        "group_outcome": 29,
         "group_exact": 4,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -770,15 +865,15 @@
           "1",
           "22"
         ],
-        "correct_outcomes": 26,
-        "current_streak": 0,
+        "correct_outcomes": 29,
+        "current_streak": 2,
         "longest_streak": 5,
         "latest_guess": {
           "pred": [
-            0,
+            3,
             0
           ],
-          "status": "wrong"
+          "status": "result"
         },
         "rare_hits": [
           {
@@ -794,13 +889,13 @@
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 14
+      "rank": 15
     },
     {
       "participant": "Stine",
-      "total": 30,
+      "total": 33,
       "breakdown": {
-        "group_outcome": 26,
+        "group_outcome": 29,
         "group_exact": 4,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -817,13 +912,13 @@
           "31",
           "29"
         ],
-        "correct_outcomes": 26,
-        "current_streak": 1,
+        "correct_outcomes": 29,
+        "current_streak": 2,
         "longest_streak": 7,
         "latest_guess": {
           "pred": [
-            0,
-            1
+            2,
+            0
           ],
           "status": "result"
         },
@@ -832,13 +927,13 @@
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 14
+      "rank": 15
     },
     {
       "participant": "Kari SJ",
-      "total": 29,
+      "total": 32,
       "breakdown": {
-        "group_outcome": 21,
+        "group_outcome": 24,
         "group_exact": 8,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -857,15 +952,15 @@
           "16",
           "42"
         ],
-        "correct_outcomes": 21,
-        "current_streak": 0,
+        "correct_outcomes": 24,
+        "current_streak": 2,
         "longest_streak": 4,
         "latest_guess": {
           "pred": [
-            0,
-            0
+            3,
+            1
           ],
-          "status": "wrong"
+          "status": "result"
         },
         "rare_hits": [
           {
@@ -881,52 +976,13 @@
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 16
-    },
-    {
-      "participant": "Marjan",
-      "total": 29,
-      "breakdown": {
-        "group_outcome": 23,
-        "group_exact": 6,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "1",
-          "2",
-          "43"
-        ],
-        "correct_outcomes": 23,
-        "current_streak": 5,
-        "longest_streak": 5,
-        "latest_guess": {
-          "pred": [
-            0,
-            1
-          ],
-          "status": "result"
-        },
-        "rare_hits": [],
-        "award_results": false,
-        "award_scores": false,
-        "award_diamonds": false
-      },
-      "rank": 16
+      "rank": 18
     },
     {
       "participant": "Øyvind",
-      "total": 28,
+      "total": 32,
       "breakdown": {
-        "group_outcome": 20,
+        "group_outcome": 24,
         "group_exact": 8,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -945,15 +1001,15 @@
           "29",
           "40"
         ],
-        "correct_outcomes": 20,
-        "current_streak": 0,
+        "correct_outcomes": 24,
+        "current_streak": 4,
         "longest_streak": 4,
         "latest_guess": {
           "pred": [
             2,
-            2
+            1
           ],
-          "status": "wrong"
+          "status": "result"
         },
         "rare_hits": [
           {
@@ -972,10 +1028,10 @@
       "rank": 18
     },
     {
-      "participant": "Johannes Due",
-      "total": 28,
+      "participant": "Sara Cools",
+      "total": 31,
       "breakdown": {
-        "group_outcome": 22,
+        "group_outcome": 25,
         "group_exact": 6,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -989,32 +1045,97 @@
       },
       "detail": {
         "exact_scores": [
-          "17",
-          "25",
-          "43"
+          "5",
+          "29",
+          "46"
         ],
-        "correct_outcomes": 22,
-        "current_streak": 0,
+        "correct_outcomes": 25,
+        "current_streak": 2,
         "longest_streak": 5,
         "latest_guess": {
           "pred": [
-            0,
-            0
+            2,
+            1
           ],
-          "status": "wrong"
+          "status": "result"
         },
-        "rare_hits": [],
+        "rare_hits": [
+          {
+            "label": "Haiti–Scotland",
+            "score": [
+              0,
+              1
+            ],
+            "hitters": 2
+          }
+        ],
         "award_results": false,
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 18
+      "rank": 20
+    },
+    {
+      "participant": "Edvard",
+      "total": 30,
+      "breakdown": {
+        "group_outcome": 24,
+        "group_exact": 6,
+        "group_winner": 0,
+        "group_runner_up": 0,
+        "reach_R32": 0,
+        "reach_R16": 0,
+        "reach_QF": 0,
+        "reach_SF": 0,
+        "reach_Final": 0,
+        "champion": 0,
+        "top_scorer": 0
+      },
+      "detail": {
+        "exact_scores": [
+          "1",
+          "39",
+          "45"
+        ],
+        "correct_outcomes": 24,
+        "current_streak": 0,
+        "longest_streak": 5,
+        "latest_guess": {
+          "pred": [
+            2,
+            2
+          ],
+          "status": "wrong"
+        },
+        "rare_hits": [
+          {
+            "label": "Belgium–Iran",
+            "score": [
+              0,
+              0
+            ],
+            "hitters": 1
+          },
+          {
+            "label": "England–Ghana",
+            "score": [
+              0,
+              0
+            ],
+            "hitters": 1
+          }
+        ],
+        "award_results": false,
+        "award_scores": false,
+        "award_diamonds": false
+      },
+      "rank": 21
     },
     {
       "participant": "Dag",
-      "total": 27,
+      "total": 29,
       "breakdown": {
-        "group_outcome": 23,
+        "group_outcome": 25,
         "group_exact": 4,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -1031,15 +1152,15 @@
           "2",
           "13"
         ],
-        "correct_outcomes": 23,
-        "current_streak": 1,
+        "correct_outcomes": 25,
+        "current_streak": 0,
         "longest_streak": 4,
         "latest_guess": {
           "pred": [
-            0,
-            1
+            1,
+            2
           ],
-          "status": "result"
+          "status": "wrong"
         },
         "rare_hits": [
           {
@@ -1055,107 +1176,13 @@
         "award_scores": false,
         "award_diamonds": false
       },
-      "rank": 20
-    },
-    {
-      "participant": "Edvard",
-      "total": 26,
-      "breakdown": {
-        "group_outcome": 22,
-        "group_exact": 4,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "1",
-          "39"
-        ],
-        "correct_outcomes": 22,
-        "current_streak": 1,
-        "longest_streak": 5,
-        "latest_guess": {
-          "pred": [
-            0,
-            1
-          ],
-          "status": "result"
-        },
-        "rare_hits": [
-          {
-            "label": "Belgium–Iran",
-            "score": [
-              0,
-              0
-            ],
-            "hitters": 1
-          }
-        ],
-        "award_results": false,
-        "award_scores": false,
-        "award_diamonds": false
-      },
-      "rank": 21
-    },
-    {
-      "participant": "Sara Cools",
-      "total": 26,
-      "breakdown": {
-        "group_outcome": 22,
-        "group_exact": 4,
-        "group_winner": 0,
-        "group_runner_up": 0,
-        "reach_R32": 0,
-        "reach_R16": 0,
-        "reach_QF": 0,
-        "reach_SF": 0,
-        "reach_Final": 0,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "5",
-          "29"
-        ],
-        "correct_outcomes": 22,
-        "current_streak": 0,
-        "longest_streak": 5,
-        "latest_guess": {
-          "pred": [
-            0,
-            0
-          ],
-          "status": "wrong"
-        },
-        "rare_hits": [
-          {
-            "label": "Haiti–Scotland",
-            "score": [
-              0,
-              1
-            ],
-            "hitters": 2
-          }
-        ],
-        "award_results": false,
-        "award_scores": false,
-        "award_diamonds": false
-      },
-      "rank": 21
+      "rank": 22
     },
     {
       "participant": "Pål",
-      "total": 23,
+      "total": 26,
       "breakdown": {
-        "group_outcome": 19,
+        "group_outcome": 22,
         "group_exact": 4,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -1172,15 +1199,15 @@
           "1",
           "38"
         ],
-        "correct_outcomes": 19,
-        "current_streak": 0,
+        "correct_outcomes": 22,
+        "current_streak": 2,
         "longest_streak": 4,
         "latest_guess": {
           "pred": [
-            1,
-            1
+            3,
+            0
           ],
-          "status": "wrong"
+          "status": "result"
         },
         "rare_hits": [],
         "award_results": false,
@@ -1191,9 +1218,9 @@
     },
     {
       "participant": "Erling",
-      "total": 22,
+      "total": 25,
       "breakdown": {
-        "group_outcome": 20,
+        "group_outcome": 23,
         "group_exact": 2,
         "group_winner": 0,
         "group_runner_up": 0,
@@ -1209,15 +1236,15 @@
         "exact_scores": [
           "34"
         ],
-        "correct_outcomes": 20,
-        "current_streak": 0,
+        "correct_outcomes": 23,
+        "current_streak": 2,
         "longest_streak": 4,
         "latest_guess": {
           "pred": [
-            1,
+            2,
             1
           ],
-          "status": "wrong"
+          "status": "result"
         },
         "rare_hits": [
           {
