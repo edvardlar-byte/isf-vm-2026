@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24 09:50",
+  "last_updated": "2026-06-25 08:31",
   "group_scores": {
     "1": [
       2,
@@ -192,10 +192,42 @@
     "48": [
       1,
       0
+    ],
+    "51": [
+      2,
+      1
+    ],
+    "52": [
+      3,
+      1
+    ],
+    "50": [
+      4,
+      2
+    ],
+    "49": [
+      0,
+      3
+    ],
+    "54": [
+      1,
+      0
+    ],
+    "53": [
+      0,
+      3
     ]
   },
-  "group_winners": {},
-  "group_runners": {},
+  "group_winners": {
+    "Group A": "Mexico",
+    "Group B": "Switzerland",
+    "Group C": "Brazil"
+  },
+  "group_runners": {
+    "Group A": "South Africa",
+    "Group B": "Canada",
+    "Group C": "Morocco"
+  },
   "bracket": {
     "R32": [],
     "R16": [],
@@ -219,15 +251,15 @@
       "goals": 4
     },
     {
+      "player": "Vinicius Junior",
+      "goals": 3
+    },
+    {
       "player": "Deniz Undav",
       "goals": 3
     },
     {
       "player": "Ismael Saibari",
-      "goals": 2
-    },
-    {
-      "player": "Vinicius Junior",
       "goals": 2
     },
     {
@@ -263,11 +295,11 @@
       "goals": 2
     },
     {
-      "player": "Ayase Ueda",
+      "player": "Rubén Vargas",
       "goals": 2
     }
   ],
-  "games_played": 48,
+  "games_played": 54,
   "games_total": 72,
   "current_goal_leader": "Kylian Mbappé"
 }
