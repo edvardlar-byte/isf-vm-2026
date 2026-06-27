@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26 09:50",
+  "last_updated": "2026-06-27 08:10",
   "group_scores": {
     "1": [
       2,
@@ -240,6 +240,30 @@
     "60": [
       0,
       0
+    ],
+    "62": [
+      5,
+      0
+    ],
+    "61": [
+      1,
+      4
+    ],
+    "66": [
+      0,
+      1
+    ],
+    "65": [
+      0,
+      0
+    ],
+    "64": [
+      1,
+      5
+    ],
+    "63": [
+      1,
+      1
     ]
   },
   "group_winners": {
@@ -248,7 +272,10 @@
     "Group C": "Brazil",
     "Group D": "United States",
     "Group E": "Germany",
-    "Group F": "Netherlands"
+    "Group F": "Netherlands",
+    "Group G": "Belgium",
+    "Group H": "Spain",
+    "Group I": "France"
   },
   "group_runners": {
     "Group A": "South Africa",
@@ -256,7 +283,10 @@
     "Group C": "Morocco",
     "Group D": "Australia",
     "Group E": "Ivory Coast",
-    "Group F": "Japan"
+    "Group F": "Japan",
+    "Group G": "Egypt",
+    "Group H": "Cape Verde",
+    "Group I": "Norway"
   },
   "bracket": {
     "R32": [],
@@ -289,6 +319,10 @@
       "goals": 3
     },
     {
+      "player": "Elijah Just",
+      "goals": 3
+    },
+    {
       "player": "Ismael Saibari",
       "goals": 2
     },
@@ -313,10 +347,6 @@
       "goals": 2
     },
     {
-      "player": "Elijah Just",
-      "goals": 2
-    },
-    {
       "player": "Marko Arnautovic",
       "goals": 2
     },
@@ -329,7 +359,7 @@
       "goals": 2
     }
   ],
-  "games_played": 60,
+  "games_played": 66,
   "games_total": 72,
   "current_goal_leader": "Kylian Mbappé"
 }
