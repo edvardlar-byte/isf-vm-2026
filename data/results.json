@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27 08:49",
+  "last_updated": "2026-06-28 08:28",
   "group_scores": {
     "1": [
       2,
@@ -264,6 +264,30 @@
     "63": [
       1,
       1
+    ],
+    "67": [
+      0,
+      2
+    ],
+    "68": [
+      2,
+      1
+    ],
+    "71": [
+      0,
+      0
+    ],
+    "72": [
+      3,
+      1
+    ],
+    "70": [
+      1,
+      3
+    ],
+    "69": [
+      3,
+      3
     ]
   },
   "group_winners": {
@@ -275,7 +299,10 @@
     "Group F": "Netherlands",
     "Group G": "Belgium",
     "Group H": "Spain",
-    "Group I": "France"
+    "Group I": "France",
+    "Group J": "Argentina",
+    "Group K": "Colombia",
+    "Group L": "England"
   },
   "group_runners": {
     "Group A": "South Africa",
@@ -286,10 +313,46 @@
     "Group F": "Japan",
     "Group G": "Egypt",
     "Group H": "Cape Verde",
-    "Group I": "Norway"
+    "Group I": "Norway",
+    "Group J": "Austria",
+    "Group K": "Portugal",
+    "Group L": "Croatia"
   },
   "bracket": {
-    "R32": [],
+    "R32": [
+      "Algeria",
+      "Argentina",
+      "Australia",
+      "Austria",
+      "Belgium",
+      "Bosnia and Herzegovina",
+      "Brazil",
+      "Canada",
+      "Cape Verde",
+      "Colombia",
+      "Croatia",
+      "DR Congo",
+      "Ecuador",
+      "Egypt",
+      "England",
+      "France",
+      "Germany",
+      "Ghana",
+      "Ivory Coast",
+      "Japan",
+      "Mexico",
+      "Morocco",
+      "Netherlands",
+      "Norway",
+      "Paraguay",
+      "Portugal",
+      "Senegal",
+      "South Africa",
+      "Spain",
+      "Sweden",
+      "Switzerland",
+      "United States"
+    ],
     "R16": [],
     "QF": [],
     "SF": [],
@@ -303,11 +366,11 @@
       "goals": 5
     },
     {
-      "player": "Erling Haaland",
-      "goals": 4
+      "player": "Lionel Messi",
+      "goals": 5
     },
     {
-      "player": "Lionel Messi",
+      "player": "Erling Haaland",
       "goals": 4
     },
     {
@@ -320,6 +383,10 @@
     },
     {
       "player": "Elijah Just",
+      "goals": 3
+    },
+    {
+      "player": "Yoane Wissa",
       "goals": 3
     },
     {
@@ -351,15 +418,11 @@
       "goals": 2
     },
     {
-      "player": "Daniel Muñoz",
-      "goals": 2
-    },
-    {
-      "player": "Rubén Vargas",
+      "player": "Harry Kane",
       "goals": 2
     }
   ],
-  "games_played": 66,
-  "games_total": 72,
+  "games_played": 72,
+  "games_total": 81,
   "current_goal_leader": "Kylian Mbappé"
 }
