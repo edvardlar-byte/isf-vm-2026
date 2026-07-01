@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-30 09:59",
+  "last_updated": "2026-07-01 08:55",
   "group_scores": {
     "1": [
       2,
@@ -363,15 +363,15 @@
   "goal_leaderboard": [
     {
       "player": "Kylian Mbappé",
+      "goals": 7
+    },
+    {
+      "player": "Erling Haaland",
       "goals": 5
     },
     {
       "player": "Lionel Messi",
       "goals": 5
-    },
-    {
-      "player": "Erling Haaland",
-      "goals": 4
     },
     {
       "player": "Vinicius Junior",
@@ -390,6 +390,10 @@
       "goals": 3
     },
     {
+      "player": "Raúl Jiménez",
+      "goals": 2
+    },
+    {
       "player": "Ismael Saibari",
       "goals": 2
     },
@@ -406,23 +410,19 @@
       "goals": 2
     },
     {
+      "player": "Amad Diallo",
+      "goals": 2
+    },
+    {
       "player": "Mattias Svanberg",
       "goals": 2
     },
     {
       "player": "Maxi Araújo",
       "goals": 2
-    },
-    {
-      "player": "Marko Arnautovic",
-      "goals": 2
-    },
-    {
-      "player": "Harry Kane",
-      "goals": 2
     }
   ],
-  "games_played": 76,
-  "games_total": 88,
+  "games_played": 79,
+  "games_total": 91,
   "current_goal_leader": "Kylian Mbappé"
 }
