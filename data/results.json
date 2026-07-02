@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01 10:11",
+  "last_updated": "2026-07-02 08:24",
   "group_scores": {
     "1": [
       2,
@@ -374,6 +374,10 @@
       "goals": 5
     },
     {
+      "player": "Harry Kane",
+      "goals": 4
+    },
+    {
       "player": "Vinicius Junior",
       "goals": 3
     },
@@ -416,13 +420,9 @@
     {
       "player": "Mattias Svanberg",
       "goals": 2
-    },
-    {
-      "player": "Maxi Araújo",
-      "goals": 2
     }
   ],
-  "games_played": 79,
-  "games_total": 91,
+  "games_played": 82,
+  "games_total": 92,
   "current_goal_leader": "Kylian Mbappé"
 }
