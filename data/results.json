@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02 09:30",
+  "last_updated": "2026-07-03 08:27",
   "group_scores": {
     "1": [
       2,
@@ -378,6 +378,10 @@
       "goals": 4
     },
     {
+      "player": "Mikel Oyarzabal",
+      "goals": 4
+    },
+    {
       "player": "Vinicius Junior",
       "goals": 3
     },
@@ -398,6 +402,10 @@
       "goals": 2
     },
     {
+      "player": "Breel Embolo",
+      "goals": 2
+    },
+    {
       "player": "Ismael Saibari",
       "goals": 2
     },
@@ -412,17 +420,9 @@
     {
       "player": "Daichi Kamada",
       "goals": 2
-    },
-    {
-      "player": "Amad Diallo",
-      "goals": 2
-    },
-    {
-      "player": "Mattias Svanberg",
-      "goals": 2
     }
   ],
-  "games_played": 82,
+  "games_played": 85,
   "games_total": 92,
   "current_goal_leader": "Kylian Mbappé"
 }
