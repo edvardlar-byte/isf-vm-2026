@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-04 08:49",
+  "last_updated": "2026-07-05 08:16",
   "group_scores": {
     "1": [
       2,
@@ -363,7 +363,7 @@
   "goal_leaderboard": [
     {
       "player": "Kylian Mbappé",
-      "goals": 7
+      "goals": 8
     },
     {
       "player": "Erling Haaland",
@@ -422,7 +422,7 @@
       "goals": 2
     }
   ],
-  "games_played": 88,
+  "games_played": 90,
   "games_total": 96,
   "current_goal_leader": "Kylian Mbappé"
 }
