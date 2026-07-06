@@ -151,6 +151,53 @@ def _compute_group_tables(fixtures, group_scores):
     return winners, runners, sorted(r32)
 
 
+# Knockout bracket sizes for the 48-team format, shallow -> deep. The last
+# chunk holds the 3rd-place play-off + the final (2 matches).
+KO_ROUND_SIZES = [("R32", 16), ("R16", 8), ("QF", 4), ("SF", 2), ("Final", 2)]
+
+
+def _derive_knockout(matches, fidx):
+    """
+    Classify knockout matches into rounds by kickoff order (the feed carries no
+    round label, but adds matches in bracket order). Returns the set of teams
+    reaching each round, plus the champion (winner of the final).
+
+    A match is 'knockout' if its team pairing isn't one of the 72 group fixtures.
+    """
+    def ch(x):
+        return C.canonical_team((x.get("homeTeam") or {}).get("name"))
+
+    def ca(x):
+        return C.canonical_team((x.get("awayTeam") or {}).get("name"))
+
+    def kickoff(x):
+        return x.get("kickoffAt") or ""
+
+    ko = [x for x in matches if (ch(x), ca(x)) not in fidx]
+    ko.sort(key=kickoff)
+
+    rounds, champion, i = {}, None, 0
+    for name, size in KO_ROUND_SIZES:
+        chunk = ko[i:i + size]
+        i += size
+        if not chunk:
+            continue
+        if name != "Final":
+            teams = sorted({t for x in chunk for t in (ch(x), ca(x)) if t})
+            if teams:
+                rounds[name] = teams
+        else:
+            # Chunk = 3rd-place play-off + final; the final is the latest match.
+            final = max(chunk, key=kickoff)
+            finalists = [t for t in (ch(final), ca(final)) if t]
+            if finalists:
+                rounds["Final"] = finalists
+            hs, as_ = final.get("homeScore"), final.get("awayScore")
+            if final.get("status") == "FINISHED" and isinstance(hs, int) and isinstance(as_, int):
+                champion = ch(final) if hs > as_ else ca(final) if as_ > hs else None
+    return rounds, champion
+
+
 def fetch_and_merge(results, now_iso=None):
     fixtures = load_fixtures()
     fidx = _fixture_index(fixtures)
@@ -177,15 +224,22 @@ def fetch_and_merge(results, now_iso=None):
                 if player:
                     goals[player] += 1
 
-    # Group winners / runners-up / R32 qualifiers (only for complete groups).
+    # Group winners / runners-up (computed once each group is complete).
     winners, runners, r32 = _compute_group_tables(fixtures, results["group_scores"])
     if winners:
         results["group_winners"] = winners
         results["group_runners"] = runners
-    if r32:
-        # union, so a manually-entered set is never shrunk
-        existing = set(results["bracket"].get("R32", []) or [])
-        results["bracket"]["R32"] = sorted(existing | set(r32))
+
+    # Knockout rounds from the actual knockout fixtures (ground truth). Falls
+    # back to the group-standings R32 estimate before knockout matches exist.
+    ko_rounds, champion = _derive_knockout(matches, fidx)
+    if not ko_rounds.get("R32") and r32:
+        ko_rounds["R32"] = r32
+    for rnd, teams in ko_rounds.items():
+        if teams:
+            results["bracket"][rnd] = sorted(teams) if rnd != "Final" else teams
+    if champion:
+        results["champion"] = champion
 
     # Goal leaderboard (informational). We deliberately do NOT auto-set the
     # official `top_scorer` from this: the goal-event feed is sparse mid-

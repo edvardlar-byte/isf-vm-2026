@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06 11:36",
+  "last_updated": "2026-07-06 13:38",
   "group_scores": {
     "1": [
       2,
@@ -353,8 +353,30 @@
       "Switzerland",
       "United States"
     ],
-    "R16": [],
-    "QF": [],
+    "R16": [
+      "Argentina",
+      "Belgium",
+      "Brazil",
+      "Canada",
+      "Colombia",
+      "Egypt",
+      "England",
+      "France",
+      "Mexico",
+      "Morocco",
+      "Norway",
+      "Paraguay",
+      "Portugal",
+      "Spain",
+      "Switzerland",
+      "United States"
+    ],
+    "QF": [
+      "England",
+      "France",
+      "Morocco",
+      "Norway"
+    ],
     "SF": [],
     "Final": []
   },
