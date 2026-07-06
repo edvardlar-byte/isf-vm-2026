@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-07-06 11:41",
+  "last_updated": "2026-07-06 13:47",
   "max_possible": 1004,
   "points_decided": 712,
   "games_played": 92,
   "games_total": 98,
   "last_result": {
-    "match_no": 70,
-    "home": "Jordan",
-    "away": "Argentina",
+    "home": "Mexico",
+    "away": "England",
     "score": [
-      1,
+      2,
       3
     ],
-    "date": "Jun 28, 2026"
+    "is_group": false
   },
+  "show_latest_guess": false,
   "standings": [
     {
       "participant": "Runa",

@@ -230,6 +230,21 @@ def fetch_and_merge(results, now_iso=None):
         results["group_winners"] = winners
         results["group_runners"] = runners
 
+    # Most recent finished match overall (group OR knockout), for the "last
+    # result" bar. Ordering by kickoff so knockout games show once played.
+    finished = [m for m in matches
+                if m.get("status") == "FINISHED"
+                and isinstance(m.get("homeScore"), int) and isinstance(m.get("awayScore"), int)]
+    if finished:
+        last = max(finished, key=lambda x: x.get("kickoffAt") or "")
+        lh = C.canonical_team((last.get("homeTeam") or {}).get("name"))
+        la = C.canonical_team((last.get("awayTeam") or {}).get("name"))
+        results["last_match"] = {
+            "home": lh, "away": la,
+            "home_score": last["homeScore"], "away_score": last["awayScore"],
+            "is_group": (lh, la) in fidx,
+        }
+
     # Knockout rounds from the actual knockout fixtures (ground truth). Falls
     # back to the group-standings R32 estimate before knockout matches exist.
     ko_rounds, champion = _derive_knockout(matches, fidx)

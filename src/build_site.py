@@ -154,8 +154,10 @@ def render(standings):
     rows = standings["standings"]
     leader_total = rows[0]["total"] if rows else 0
     _lr = standings.get("last_result")
-    has_result = bool(_lr and _lr.get("home") and _lr.get("away"))
-    body = "".join(_row(s, leader_total, has_result) for s in rows) or \
+    # Per-row "Siste tipp" only makes sense while the newest match is a group
+    # game (we don't parse knockout scoreline guesses).
+    show_guess = bool(standings.get("show_latest_guess"))
+    body = "".join(_row(s, leader_total, show_guess) for s in rows) or \
         '<tr><td colspan="7" class="empty">Ingen deltakerark er lest inn ennå.</td></tr>'
 
     updated = standings.get("last_updated") or "ikke oppdatert ennå"

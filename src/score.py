@@ -185,14 +185,27 @@ def build_standings(preds=None, results=None):
         for m in fixtures["group_matches"]:
             fx_by_no[str(m["match_no"])] = m
 
-    # Most recent finished match (ordered_finished is ascending by kickoff).
-    last_result = None
-    if ordered_finished:
-        mno = ordered_finished[-1]
-        fm = fx_by_no.get(mno, {})
-        rh, ra = actual[mno]
-        last_result = {"match_no": int(mno), "home": fm.get("home"),
-                       "away": fm.get("away"), "score": [rh, ra], "date": fm.get("date")}
+    # Latest finished GROUP match (used for the per-row "Siste tipp" comparison,
+    # since we only have participants' group-match scoreline predictions).
+    latest_group_no = ordered_finished[-1] if ordered_finished else None
+
+    # "Last result" bar: prefer the true most-recent match overall (incl.
+    # knockouts) recorded by the fetcher; fall back to the latest group match.
+    lm = results.get("last_match")
+    if lm and lm.get("home") and lm.get("away"):
+        last_result = {"home": lm["home"], "away": lm["away"],
+                       "score": [lm["home_score"], lm["away_score"]],
+                       "is_group": lm.get("is_group", False)}
+    elif latest_group_no:
+        fm = fx_by_no.get(latest_group_no, {})
+        rh, ra = actual[latest_group_no]
+        last_result = {"home": fm.get("home"), "away": fm.get("away"),
+                       "score": [rh, ra], "is_group": True}
+    else:
+        last_result = None
+
+    # Show the per-row "Siste tipp" only while the newest match is a group game.
+    show_latest_guess = bool(last_result and last_result.get("is_group"))
 
     # How many participants nailed each finished match's exact score.
     n = len(preds)
@@ -211,12 +224,12 @@ def build_standings(preds=None, results=None):
         s["detail"]["current_streak"] = cur
         s["detail"]["longest_streak"] = longest
 
-        # Latest guess (for the most recent finished match).
+        # Latest guess (for the most recent finished GROUP match).
         lg = {"pred": None, "status": "none"}
-        if last_result:
-            pg = p.get("group_scores", {}).get(str(last_result["match_no"]))
+        if latest_group_no:
+            pg = p.get("group_scores", {}).get(latest_group_no)
             if pg:
-                rh, ra = last_result["score"]
+                rh, ra = actual[latest_group_no]
                 if pg == [rh, ra]:
                     st = "exact"
                 elif _sign(pg[0], pg[1]) == _sign(rh, ra):
@@ -272,6 +285,7 @@ def build_standings(preds=None, results=None):
         "games_played": results.get("games_played", len(results.get("group_scores", {}))),
         "games_total": results.get("games_total", 104),
         "last_result": last_result,
+        "show_latest_guess": show_latest_guess,
         "standings": scored,
     }
 
