@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05 09:21",
+  "last_updated": "2026-07-06 09:10",
   "group_scores": {
     "1": [
       2,
@@ -367,7 +367,7 @@
     },
     {
       "player": "Erling Haaland",
-      "goals": 5
+      "goals": 7
     },
     {
       "player": "Lionel Messi",
@@ -380,6 +380,10 @@
     {
       "player": "Mikel Oyarzabal",
       "goals": 4
+    },
+    {
+      "player": "Raúl Jiménez",
+      "goals": 3
     },
     {
       "player": "Vinicius Junior",
@@ -396,10 +400,6 @@
     {
       "player": "Yoane Wissa",
       "goals": 3
-    },
-    {
-      "player": "Raúl Jiménez",
-      "goals": 2
     },
     {
       "player": "Breel Embolo",
@@ -422,7 +422,7 @@
       "goals": 2
     }
   ],
-  "games_played": 90,
-  "games_total": 96,
+  "games_played": 92,
+  "games_total": 98,
   "current_goal_leader": "Kylian Mbappé"
 }
