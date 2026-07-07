@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06 11:48",
+  "last_updated": "2026-07-07 08:41",
   "group_scores": {
     "1": [
       2,
@@ -372,10 +372,12 @@
       "United States"
     ],
     "QF": [
+      "Belgium",
       "England",
       "France",
       "Morocco",
-      "Norway"
+      "Norway",
+      "Spain"
     ],
     "SF": [],
     "Final": []
@@ -424,6 +426,10 @@
       "goals": 3
     },
     {
+      "player": "Romelu Lukaku",
+      "goals": 3
+    },
+    {
       "player": "Breel Embolo",
       "goals": 2
     },
@@ -438,20 +444,16 @@
     {
       "player": "Crysencio Summerville",
       "goals": 2
-    },
-    {
-      "player": "Daichi Kamada",
-      "goals": 2
     }
   ],
-  "games_played": 92,
-  "games_total": 98,
+  "games_played": 94,
+  "games_total": 99,
   "current_goal_leader": "Kylian Mbappé",
   "last_match": {
-    "home": "Mexico",
-    "away": "England",
-    "home_score": 2,
-    "away_score": 3,
+    "home": "United States",
+    "away": "Belgium",
+    "home_score": 1,
+    "away_score": 4,
     "is_group": false
   }
 }
