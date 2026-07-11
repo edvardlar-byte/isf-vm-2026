@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10 09:51",
+  "last_updated": "2026-07-11 07:19",
   "group_scores": {
     "1": [
       2,
@@ -448,14 +448,14 @@
       "goals": 2
     }
   ],
-  "games_played": 97,
+  "games_played": 98,
   "games_total": 100,
   "current_goal_leader": "Kylian Mbappé",
   "last_match": {
-    "home": "France",
-    "away": "Morocco",
+    "home": "Spain",
+    "away": "Belgium",
     "home_score": 2,
-    "away_score": 0,
+    "away_score": 1,
     "is_group": false
   }
 }
