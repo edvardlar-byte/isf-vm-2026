@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12 07:37",
+  "last_updated": "2026-07-12 08:30",
   "group_scores": {
     "1": [
       2,
@@ -382,6 +382,8 @@
       "Switzerland"
     ],
     "SF": [
+      "Argentina",
+      "England",
       "France",
       "Spain"
     ],
@@ -452,7 +454,7 @@
     }
   ],
   "games_played": 100,
-  "games_total": 101,
+  "games_total": 102,
   "current_goal_leader": "Kylian Mbappé",
   "last_match": {
     "home": "Argentina",
