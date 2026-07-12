@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-11 08:13",
+  "last_updated": "2026-07-12 07:37",
   "group_scores": {
     "1": [
       2,
@@ -381,7 +381,10 @@
       "Spain",
       "Switzerland"
     ],
-    "SF": [],
+    "SF": [
+      "France",
+      "Spain"
+    ],
     "Final": []
   },
   "champion": null,
@@ -401,6 +404,10 @@
     },
     {
       "player": "Harry Kane",
+      "goals": 4
+    },
+    {
+      "player": "Jude Bellingham",
       "goals": 4
     },
     {
@@ -442,19 +449,15 @@
     {
       "player": "Ismael Saibari",
       "goals": 2
-    },
-    {
-      "player": "Kai Havertz",
-      "goals": 2
     }
   ],
-  "games_played": 98,
-  "games_total": 100,
+  "games_played": 100,
+  "games_total": 101,
   "current_goal_leader": "Kylian Mbappé",
   "last_match": {
-    "home": "Spain",
-    "away": "Belgium",
-    "home_score": 2,
+    "home": "Argentina",
+    "away": "Switzerland",
+    "home_score": 3,
     "away_score": 1,
     "is_group": false
   }
