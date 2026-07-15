@@ -1,15 +1,15 @@
 {
-  "last_updated": "2026-07-14 08:26",
+  "last_updated": "2026-07-15 07:23",
   "max_possible": 1004,
   "points_decided": 904,
-  "games_played": 100,
+  "games_played": 101,
   "games_total": 102,
   "last_result": {
-    "home": "Argentina",
-    "away": "Switzerland",
+    "home": "France",
+    "away": "Spain",
     "score": [
-      3,
-      1
+      0,
+      2
     ],
     "is_group": false
   },

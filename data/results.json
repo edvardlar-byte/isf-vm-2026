@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14 08:26",
+  "last_updated": "2026-07-15 07:23",
   "group_scores": {
     "1": [
       2,
@@ -405,15 +405,15 @@
       "goals": 5
     },
     {
+      "player": "Mikel Oyarzabal",
+      "goals": 5
+    },
+    {
       "player": "Harry Kane",
       "goals": 4
     },
     {
       "player": "Jude Bellingham",
-      "goals": 4
-    },
-    {
-      "player": "Mikel Oyarzabal",
       "goals": 4
     },
     {
@@ -453,14 +453,14 @@
       "goals": 2
     }
   ],
-  "games_played": 100,
+  "games_played": 101,
   "games_total": 102,
   "current_goal_leader": "Kylian Mbappé",
   "last_match": {
-    "home": "Argentina",
-    "away": "Switzerland",
-    "home_score": 3,
-    "away_score": 1,
+    "home": "France",
+    "away": "Spain",
+    "home_score": 0,
+    "away_score": 2,
     "is_group": false
   }
 }
