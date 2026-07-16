@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15 08:34",
+  "last_updated": "2026-07-16 07:31",
   "group_scores": {
     "1": [
       2,
@@ -387,7 +387,10 @@
       "France",
       "Spain"
     ],
-    "Final": []
+    "Final": [
+      "Spain",
+      "Argentina"
+    ]
   },
   "champion": null,
   "top_scorer": null,
@@ -445,21 +448,21 @@
       "goals": 3
     },
     {
-      "player": "Breel Embolo",
-      "goals": 2
+      "player": "Lautaro Martínez",
+      "goals": 3
     },
     {
-      "player": "Ismael Saibari",
+      "player": "Breel Embolo",
       "goals": 2
     }
   ],
-  "games_played": 101,
-  "games_total": 102,
+  "games_played": 102,
+  "games_total": 104,
   "current_goal_leader": "Kylian Mbappé",
   "last_match": {
-    "home": "France",
-    "away": "Spain",
-    "home_score": 0,
+    "home": "England",
+    "away": "Argentina",
+    "home_score": 1,
     "away_score": 2,
     "is_group": false
   }
