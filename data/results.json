@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18 08:06",
+  "last_updated": "2026-07-19 07:35",
   "group_scores": {
     "1": [
       2,
@@ -397,7 +397,7 @@
   "goal_leaderboard": [
     {
       "player": "Kylian Mbappé",
-      "goals": 9
+      "goals": 10
     },
     {
       "player": "Erling Haaland",
@@ -405,6 +405,10 @@
     },
     {
       "player": "Lionel Messi",
+      "goals": 5
+    },
+    {
+      "player": "Jude Bellingham",
       "goals": 5
     },
     {
@@ -416,7 +420,7 @@
       "goals": 4
     },
     {
-      "player": "Jude Bellingham",
+      "player": "Ousmane Dembélé",
       "goals": 4
     },
     {
@@ -436,11 +440,11 @@
       "goals": 3
     },
     {
-      "player": "Yoane Wissa",
+      "player": "Bradley Barcola",
       "goals": 3
     },
     {
-      "player": "Ousmane Dembélé",
+      "player": "Yoane Wissa",
       "goals": 3
     },
     {
@@ -450,20 +454,16 @@
     {
       "player": "Lautaro Martínez",
       "goals": 3
-    },
-    {
-      "player": "Breel Embolo",
-      "goals": 2
     }
   ],
-  "games_played": 102,
+  "games_played": 103,
   "games_total": 104,
   "current_goal_leader": "Kylian Mbappé",
   "last_match": {
-    "home": "England",
-    "away": "Argentina",
-    "home_score": 1,
-    "away_score": 2,
+    "home": "France",
+    "away": "England",
+    "home_score": 4,
+    "away_score": 6,
     "is_group": false
   }
 }
