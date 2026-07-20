@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19 08:31",
+  "last_updated": "2026-07-20 08:17",
   "group_scores": {
     "1": [
       2,
@@ -392,7 +392,7 @@
       "Argentina"
     ]
   },
-  "champion": null,
+  "champion": "Spain",
   "top_scorer": null,
   "goal_leaderboard": [
     {
@@ -456,14 +456,14 @@
       "goals": 3
     }
   ],
-  "games_played": 103,
+  "games_played": 104,
   "games_total": 104,
   "current_goal_leader": "Kylian Mbappé",
   "last_match": {
-    "home": "France",
-    "away": "England",
-    "home_score": 4,
-    "away_score": 6,
+    "home": "Spain",
+    "away": "Argentina",
+    "home_score": 1,
+    "away_score": 0,
     "is_group": false
   }
 }
