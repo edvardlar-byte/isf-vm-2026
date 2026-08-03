@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02 08:35",
+  "last_updated": "2026-08-03 10:35",
   "max_possible": 1004,
   "points_decided": 1004,
   "games_played": 104,
@@ -81,7 +81,7 @@
     },
     {
       "participant": "Kari SJ",
-      "total": 639,
+      "total": 659,
       "breakdown": {
         "group_outcome": 40,
         "group_exact": 10,
@@ -93,7 +93,7 @@
         "reach_SF": 128,
         "reach_Final": 40,
         "champion": 40,
-        "top_scorer": 0
+        "top_scorer": 20
       },
       "detail": {
         "exact_scores": [
@@ -328,6 +328,56 @@
       "rank": 6
     },
     {
+      "participant": "Jan-Paul",
+      "total": 592,
+      "breakdown": {
+        "group_outcome": 47,
+        "group_exact": 10,
+        "group_winner": 45,
+        "group_runner_up": 35,
+        "reach_R32": 135,
+        "reach_R16": 88,
+        "reach_QF": 96,
+        "reach_SF": 96,
+        "reach_Final": 20,
+        "champion": 0,
+        "top_scorer": 20
+      },
+      "detail": {
+        "exact_scores": [
+          "7",
+          "25",
+          "31",
+          "29",
+          "67"
+        ],
+        "correct_outcomes": 47,
+        "current_streak": 2,
+        "longest_streak": 7,
+        "latest_guess": {
+          "pred": [
+            0,
+            2
+          ],
+          "status": "result"
+        },
+        "rare_hits": [
+          {
+            "label": "Brazil–Morocco",
+            "score": [
+              1,
+              1
+            ],
+            "hitters": 2
+          }
+        ],
+        "award_results": true,
+        "award_scores": false,
+        "award_diamonds": false
+      },
+      "rank": 7
+    },
+    {
       "participant": "Stine",
       "total": 573,
       "breakdown": {
@@ -362,56 +412,6 @@
         },
         "rare_hits": [],
         "award_results": false,
-        "award_scores": false,
-        "award_diamonds": false
-      },
-      "rank": 7
-    },
-    {
-      "participant": "Jan-Paul",
-      "total": 572,
-      "breakdown": {
-        "group_outcome": 47,
-        "group_exact": 10,
-        "group_winner": 45,
-        "group_runner_up": 35,
-        "reach_R32": 135,
-        "reach_R16": 88,
-        "reach_QF": 96,
-        "reach_SF": 96,
-        "reach_Final": 20,
-        "champion": 0,
-        "top_scorer": 0
-      },
-      "detail": {
-        "exact_scores": [
-          "7",
-          "25",
-          "31",
-          "29",
-          "67"
-        ],
-        "correct_outcomes": 47,
-        "current_streak": 2,
-        "longest_streak": 7,
-        "latest_guess": {
-          "pred": [
-            0,
-            2
-          ],
-          "status": "result"
-        },
-        "rare_hits": [
-          {
-            "label": "Brazil–Morocco",
-            "score": [
-              1,
-              1
-            ],
-            "hitters": 2
-          }
-        ],
-        "award_results": true,
         "award_scores": false,
         "award_diamonds": false
       },
